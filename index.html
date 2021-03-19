@@ -1,106 +1,94 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Fond Momento</title>
-        <link rel="shortcut icon" href="images/icon.png">
-        <style>
-        #header {
-            background-color:#F7E1A1;
-            height:150px;
-            width:100%;
-            position: fixed;
-            top: 0;
-            left:0;
-        }
-        #logo {
-            position: absolute;
-            top:50%;
-            transform:translateY(-50%);
-            left: 0.5%;
-        }
-        #logoword {
-            position: absolute;
-            top:30px;
-            /* 此處應該有更好的寫法，之後改進 */
-            left:50%;
-            transform:translateX(-50%);
-        }
-        #toplink {
-            position: absolute;
-            top:70%;
-            width: 100%;
-            color:#4D1500;
-            font-weight:bold;
-            font-size: 20px;
-        }
-        #link1 {
-            position: absolute;
-            left: 16%;
-        }
-        #link2 {
-            position: absolute;
-            left: 32%;
-        }
-        #link3 {
-            position: absolute;
-            left: 66%;
-        }
-        #link4 {
-            position: absolute;
-            left: 82%;
-        }
-        #slideshow {
-            position: absolute;
-            left:50%;
-            transform:translateX(-50%);
-            top:175px;
-            z-index:-1;
-        }
-        #slideshow2 {
-            position: absolute;
-            left:50%;
-            transform:translateX(-50%);
-            top:975px;
-            z-index:-1;
-        }
-        footer {
-            position: absolute;
-            left:50%;
-            transform:translateX(-50%);
-            top:1800px;
-            /* 有更好的寫法，之後更換 */
-            z-index:-1;
-        }
-        </style>
-    </head>
-    <body background="images\background.jpg" >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/template.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font-family: "Noto Sans TC"; -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fond Momento</title>
+</head>
+<body>
+    <header>
+        <div id="banner_top">
+            <a href="index.html"><img id="banner_logo" src="images/logo.png" alt="LOGO: Fond Momento"></a>
+            <img id="banner_slogan" src="images/header_slogan.png" alt="Slogan: Love is not onyl a sentiment, but also an art">
+
+        </div>
+        <nav>            
+            <ul id="nav_bar">
+                <li class="nav_items"><a href="訂製拼圖.html">訂製拼圖</a></li>
+                <li class="nav_items"><a href="裱框服務.html">裱框服務</a></li>
+                <li class="nav_items"><a href="拼圖遊戲.html">拼圖遊戲</a></li>
+            </ul>
+
+            <div id="member_cart">
+                <a href="會員.html"><img class="cart_icons" src="images/icons/1x/member.png" alt="Member Login"></a>
+                <a href="購物車.html"><img class="cart_icons" src="images/icons/1x/cart.png" alt="Shopping Cart"></a>
+            </div>
+        </nav>
+    </header>
+        <div id="header_space"></div>
+        <div id="content">
+            <div class="seperation_block"></div>
+            <div id="slideshow">
+                <div id="slide_main">
+                    <a href="#"><img class="slides" src="images/slideshow/slideshow1.jpg" alt="眼鏡先生"></a></div>
+                    <!-- <a href="#"><img class="slides" src="images/slideshow/slideshow2.jpeg" alt="家庭照"></a></div>
+                    <a href="#"><img class="slides" src="images/slideshow/slideshow3.png" alt="紅貓熊"></a></div> -->
+    
+                </div>
+                <!-- <div id="slide_button_row">
+                    <button class="slide_button_left" onclick="plusDivs(-1)">Left</button>
+                    <button class="slide_button_left" onclick="plusDivs(+1)">Right</button>
+                </div> -->
+
+            </div>
             
-        <div id="header">
-            <div id="logo">
-                <img src="images\logo.png" width="150px">
-            </div>
-            <div id="logoword">
-                <img src="images\logoword.png">
-            </div>
-            <div id="toplink">
-                <a id="link1">開始製作</a>
-                <a id="link2">小遊戲</a>
-                <a id="link3">會員登入</a>
-                <a id="link4">購物車</a>
-            </div>            
+            <div class="seperation_block"></div>
+            <div id="showcase">
+                <div class="showcase_item">
+                        <a href="#"><img class="showcase_item_photo" src="images/首頁照片/cat_oval_相框.png" alt="貓咪相框"></a>
+                        <div class="showcase_item_name"><a href="#">貓咪相框</a></div>
+                </div>
+                <div class="showcase_item">
+                        <a href="#"><img class="showcase_item_photo" src="images/首頁照片/Circle_相框.png" alt="圓形相框"></a>
+                        <div class="showcase_item_name"><a href="#">圓形相框</a></div>
+                </div>
+                <div class="showcase_item">
+                        <a href="#"><img class="showcase_item_photo" src="images/首頁照片/heart_相框.png" alt="心型姊妹"></a>
+                        <div class="showcase_item_name"><a href="#">心型姊妹</a></div>
+                </div>
+                <div class="showcase_item">
+                        <a href="#"><img class="showcase_item_photo" src="images/首頁照片/Square_相框.png" alt="包裝"></a>
+                        <div class="showcase_item_name"><a href="#">包裝方式</a></div>
+                </div>
+                <div class="showcase_item">
+                        <a href="#"><img class="showcase_item_photo" src="images/首頁照片/相框.png" alt="大小多樣式"></a>
+                        <div class="showcase_item_name"><a href="#">大小多樣式</a></div>
+                </div>
+                <div class="showcase_item">
+                        <a href="#"><img class="showcase_item_photo" src="images/首頁照片/urgent _document.png" alt="急件"></a>
+                        <div class="showcase_item_name"><a href="#">急件</a></div>
+                </div>
+             </div>
         </div>
-        <div id="slideshow">
-            <img src="images/pic1.jpg" height="775px">
+    </main>
+
+    <footer>
+        <div >
+            <ul id="footer_details">
+                <li class="footer_items"><a href="關於我們.html">關於我們</a></li>
+                <li class="footer_lines">|</li>
+                <li class="footer_items"><a href="聯絡資訊.html">聯絡資訊</a></li>
+            </ul>
+
         </div>
-        <div id="slideshow2">
-            <img src="images/pic2.jpg" height="775px">
-            <!-- 測試用<div>可刪除 -->
-        </div>
-        <footer>
-            <a href="https://www.lativ.com.tw/OnSale/WARM/WOMEN?pid=2011271067&utm_source=google&utm_medium=GSN_warm85dup&AID=19090491&gclid=Cj0KCQjwrsGCBhD1ARIsALILBYoW8--DbxGuTmBSH6a56C9dC1f2WofCIe_uQb5_96Q9-uz92v-6wF4aAmekEALw_wcB">關於我們</a>
-            <a>聯絡資訊</a>
-            <a>社群</a>
-        </footer>
-    </body>
+
+    </footer>
+</body>
 </html>
