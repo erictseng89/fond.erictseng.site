@@ -1,5 +1,10 @@
+	/* border-width: 0.3rem;
+    border-style: solid;
+    border-color: white; */
+
 :root {
 	--color-yellow: #F2C353;
+	--color-backgroundtint: rgba(245,245,245,0.5);
 	--color-banner: rgba(247, 225, 161, 1);
 	--color-banner_bottom: rgba(247, 225, 161, 0.78);
 	--color-lightblue: #128BA6;
@@ -10,42 +15,73 @@
 	font-size: 20px;
 }
 
+@media (max-width: 450px) {
+	:root {
+		font-size: 12px;
+	}
+}
+@media (max-width: 300px) {
+	:root {
+		font-size: 9px;
+	}
+}
+
+body {
+	/* Uses linear gradient function to creates an Image which is added to the background stack  */
+	background: linear-gradient(var(--color-backgroundtint), var(--color-backgroundtint)), url(../images/backimage.png);
+	font-family: "Noto Sans TC";
+	min-height: 100vh;
+}
+
+/* BANNER TOP START */
 header{
 	position: fixed;
+	height: 11.5rem;
 	width: 100%;
 	top: 0%; left: 0%;
+	z-index: 1;
 }
 
 #header_space {
 	height: 11.5rem;
 }
 
-body {
-	background-image: url(../images/backimage.png);
-	font-family: "Noto Sans TC";
-}
-
-/* BANNER TOP START */
-
 #banner_top {
 	background-color: var(--color-banner);
 	height: 9rem;
 	top: 0%;	left: 0%;
 	display: flex;
-	align-items: center;
+	position: relative;
+	/* align-items: center; */
 }
 
 #banner_logo {
-	width: 9rem;
-	padding: 0rem 0.5rem;
+	/* border-width: 0.3rem;
+    border-style: solid;
+    border-color: white; */
+	/* width: 9rem; */
+	display: block;
+	margin: 5% 0% 5% 5%;
+	height: 90%;
+	max-height: 9rem;
+	width: auto;
+	/* width: 70%;
+	max-width: 9rem;
+	height: auto; */
+	padding: 0;
 }
 
 #banner_slogan {
-	height: 5rem;
-	position: relative;
-	top: 1rem;
+	/* display: block;
+	border-width: 0.3rem;
+    border-style: solid; */
+    border-color: white;
+	max-height: 40%;
+	width: auto;
+	position: absolute;
+	bottom: 10%;
+	margin: 0;
 }
-
 /* BANNER TOP END */
 /* NAV BAR START */
 
@@ -56,11 +92,25 @@ nav {
 	display: flex;
 }
 
+#navblock{
+	/* border-width: 0.3rem;
+    border-style: solid;
+    border-color: white; */
+	padding: 0;
+	margin: 0;
+	width: 3rem;
+	max-width: 5vw;
+
+}
+
 #nav_bar {
 	list-style-type: none;
-	margin: 0px;
-	padding: 0rem 2rem;
+	position: relative;
+	margin: 0rem;
+	padding: 0;
+	/* padding: 0rem 2rem; */
 }
+
 
 .nav_items {
 	display: inline-block;
@@ -76,15 +126,14 @@ nav {
 
 .nav_items:hover {
 	background-color: var(--color-yellow);
+	transform: scale(1.05);
 }
 
 #member_cart {
-	float: right;
-	height: 2.5rem;
-	padding: 0rem;
-	margin: 0rem;
 	position: absolute;
-	bottom: 0rem;
+	padding: 0;
+	margin: 0;
+	bottom: 0%;
 	right: 0.3rem;
 	height: 2.5rem;
 	display: flex;
@@ -110,7 +159,7 @@ nav {
 
 footer {
 	background-color: var(--color-banner);
-	position: absolute;
+	position: fixed;
 	right: 0; bottom: 0%;
 	width: 100%;
 	height: 2rem;
@@ -143,6 +192,7 @@ footer {
 
 .footer_items:hover {
 	background-color: var(--color-yellow);
+	transform: scale(1.05);
 }
 
 /* FOOTER ENDS */

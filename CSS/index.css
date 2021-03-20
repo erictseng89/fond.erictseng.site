@@ -1,5 +1,10 @@
+body{
+    /* width: 100%;
+    height: 100%; */
+}
+
 .seperation_block {
-    /* background-color: var(--color-pink); */
+    content: "";
     padding: 0rem;
     margin: 0rem;
     height: 2rem;
@@ -12,23 +17,28 @@
     border-style: solid;
     border-color: black; */
     margin: auto;
-    height: 36rem;
-    width: 54rem;
+    width: 90vw;
+    max-width: 60rem;
+    height: auto;
+    
 }
 
 #slide_main {
-    border-width: 0.3rem;
-    border-style: solid;
-    border-color: white;
     margin: auto;
-    height: 35rem;
-    width: 53rem;
+    max-height: 100%;
+    max-width: 100%;
+    /* height: 35rem;
+    width: 53rem; */
 }
 
 .slides{
+    border-width: 0.3rem;
+    border-style: solid;
+    border-color: white;
     display: block;
     margin: 0rem auto;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 #slide_button_row {
@@ -39,46 +49,47 @@
     margin: auto;
 }
 
-
-
-
-
 /* SLIDESHOW ENDS */
 /* SHOWCASE STARTS */
 
 #showcase {
     margin: auto;
     position: relative;
-    height: 36rem;
-    width: 54rem;
+    height: auto;
+    /* width: 54rem; */
+    width: 90vw;
+    max-width: 60rem;
     display: grid;
-    grid-template-columns: 18rem 18rem 18rem;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .showcase_item {
-    margin: auto;
-    height: 17rem;
-    width: 17rem;
+    margin: 10% auto;
+    max-height: 95%;
+    max-width: 95%;
+    /* height: 33%;
+    width: auto; */
+}
+
+.showcase_item:hover {
+    transform: scale(1.1);
 }
 
 .showcase_item_photo {
     display: block;
-
-    width: 14rem;
-    height: 14rem;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-    
 }
 
 .showcase_item_name {
     position: relative;
-    top: 0.5rem;
+    top: 10%;
     text-align: center;
-    margin: 0rem auto;
 }
 
 .showcase_item_name a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Noto Sans TC";
     font-weight: bold;
     color: var(--color-brown);
