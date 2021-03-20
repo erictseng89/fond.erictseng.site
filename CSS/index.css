@@ -10,6 +10,12 @@ body{
     height: 2rem;
 }
 
+/* #content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
 /* SLIDESHOW START */
 
 #slideshow {
