@@ -16,9 +16,9 @@
 		font-size: 12px;
 	}
 }
-@media (max-width: 300px) {
+@media (max-width: 330px) {
 	:root {
-		font-size: 9px;
+		font-size: 10px;
 	}
 }
 
@@ -33,19 +33,19 @@ body {
 
 header{
 	position: fixed;
-	height: 11.5rem;
+	height: 9.5rem;
 	width: 100%;
 	top: 0%; left: 0%;
 	z-index: 1;
 }
 
 #header_space {
-	height: 11.5rem;
+	height: 9.5rem;
 }
 
 #banner_top {
 	background-color: var(--color-banner);
-	height: 9rem;
+	height: 7rem;
 	top: 0%;	left: 0%;
 	display: flex;
 	position: relative;
@@ -55,17 +55,17 @@ header{
 	display: block;
 	margin: 5% 0% 5% 5%;
 	height: 90%;
-	max-height: 9rem;
+	max-height: 7rem;
 	width: auto;
 	padding: 0;
 }
 
 #banner_slogan {
     border-color: white;
-	max-height: 40%;
+	max-height: 50%;
 	width: auto;
 	position: absolute;
-	bottom: 10%;
+	bottom: 8%;
 	margin: 0;
 }
 
@@ -75,7 +75,7 @@ header{
 nav {
 	background-color: var(--color-banner_bottom); 
 	height: 2.5rem;
-	top: 11rem;
+	top: 9rem;
 	display: flex;
 }
 
