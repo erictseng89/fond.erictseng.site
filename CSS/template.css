@@ -1,7 +1,3 @@
-	/* border-width: 0.3rem;
-    border-style: solid;
-    border-color: white; */
-
 :root {
 	--color-yellow: #F2C353;
 	--color-backgroundtint: rgba(245,245,245,0.5);
@@ -34,6 +30,7 @@ body {
 }
 
 /* BANNER TOP START */
+
 header{
 	position: fixed;
 	height: 11.5rem;
@@ -52,29 +49,18 @@ header{
 	top: 0%;	left: 0%;
 	display: flex;
 	position: relative;
-	/* align-items: center; */
 }
 
 #banner_logo {
-	/* border-width: 0.3rem;
-    border-style: solid;
-    border-color: white; */
-	/* width: 9rem; */
 	display: block;
 	margin: 5% 0% 5% 5%;
 	height: 90%;
 	max-height: 9rem;
 	width: auto;
-	/* width: 70%;
-	max-width: 9rem;
-	height: auto; */
 	padding: 0;
 }
 
 #banner_slogan {
-	/* display: block;
-	border-width: 0.3rem;
-    border-style: solid; */
     border-color: white;
 	max-height: 40%;
 	width: auto;
@@ -82,6 +68,7 @@ header{
 	bottom: 10%;
 	margin: 0;
 }
+
 /* BANNER TOP END */
 /* NAV BAR START */
 
@@ -93,9 +80,6 @@ nav {
 }
 
 #navblock{
-	/* border-width: 0.3rem;
-    border-style: solid;
-    border-color: white; */
 	padding: 0;
 	margin: 0;
 	width: 3rem;
@@ -108,7 +92,6 @@ nav {
 	position: relative;
 	margin: 0rem;
 	padding: 0;
-	/* padding: 0rem 2rem; */
 }
 
 
