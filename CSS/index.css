@@ -71,14 +71,15 @@ body{
 
 .showcase_item {
     margin: 10% auto;
-    max-height: 95%;
-    max-width: 95%;
+    max-width: 90%;
+    height: auto;
+    
     /* height: 33%;
     width: auto; */
 }
 
-.showcase_item:hover {
-    transform: scale(1.1);
+.showcase_item img::after:hover {
+    background-color: var(--color-backgroundtint);
 }
 
 .showcase_item_photo {
@@ -90,7 +91,7 @@ body{
 
 .showcase_item_name {
     position: relative;
-    top: 10%;
+    top: 5%;
     text-align: center;
 }
 
