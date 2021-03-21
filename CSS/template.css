@@ -88,7 +88,7 @@ nav {
 	/* border: 1px solid black; */
 	background-color: var(--color-banner_bottom);
 	height: 2.5em;
-	top: 9em;
+	/* top: 9em; */
 	display: flex;
 	justify-content: space-around;
 	font-size: inherit;
@@ -103,7 +103,7 @@ nav {
 } */
 
 #nav_bar {
-	border: 1px solid red;
+	/* border: 1px inset red; */
 	list-style-type: none;
 	margin: 0rem;
 	padding: 0;
@@ -114,7 +114,7 @@ nav {
 
 
 .nav_items {
-	border: 1px solid red;
+	/* border: 1px inset red; */
 	display: inline-block;
 	margin: 0;
 	padding: 0.35em 1em;
@@ -149,7 +149,7 @@ nav {
 
 .cart_icons {
 	font-size: inherit;
-	max-height: 2.0em;
+	max-height: 1.9em;
 	/* transform: scale(0.8); */
 	padding: 0% 1vw;
 }
