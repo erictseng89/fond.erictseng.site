@@ -1,4 +1,9 @@
 :root {
+	/* FONT-SIZE */
+	font-size: 20px;
+	--fontsize-media: 20px;
+
+	/* COLORS */
 	--color-yellow: #F2C353;
 	--color-backgroundtint: rgba(245,245,245,0.5);
 	--color-banner: rgba(247, 225, 161, 1);
@@ -8,17 +13,80 @@
 	--color-brown: #2E0E05;
 	--color-pink: #EC716E;
 	--color-orange: #EA6039;
-	font-size: 20px;
+
+	/* HEADER */
+	--position-banner: fixed;
+	--top-navbar: 7em;
+	--position-navbar: fixed;
+	--margin-navbar: 0 3.5vw;
+	--display-navlogo: none;
+	--margin-headerspace: 9.5em;
+}
+
+@media (max-height: 800px) {
+	:root {
+		--position-banner: static;
+		--top-navbar: 0em;
+		--position-navbar: sticky;
+		--display-navlogo: block;
+		--margin-headerspace: none;
+	}
+}
+
+@media (max-width: 950px) {
+    :root {
+		font-size: 15px;
+		--fontsize-media: 15px;
+		--position-banner: static;
+		--top-navbar: 0em;
+		--position-navbar: sticky;
+		--margin-navbar: 0;
+		--display-navlogo: block;
+		--margin-headerspace: none;
+    }
+}
+
+@media (max-width: 600px) {
+	:root {
+		font-size: 15px;
+		--fontsize-media: 15px;
+		--margin-navbar: 0;
+		--display-navlogo: block;
+	}
 }
 
 @media (max-width: 450px) {
 	:root {
 		font-size: 12px;
+		--fontsize-media: 12px;
 	}
 }
+
+@media (max-width: 380px) {
+	:root {
+		font-size: 11px;
+		--fontsize-media: 11px;
+	}
+}
+
 @media (max-width: 300px) {
 	:root {
+		font-size: 9.5px;
+		--fontsize-media: 9.5px;
+	}
+}
+
+@media (max-width: 275px) {
+	:root {
 		font-size: 9px;
+		--fontsize-media: 9px;
+	}
+}
+
+@media (max-width: 250px) {
+	:root {
+		font-size: 8px;
+		--fontsize-media: 8px;
 	}
 }
 
@@ -27,78 +95,107 @@ body {
 	background: linear-gradient(var(--color-backgroundtint), var(--color-backgroundtint)), url(../images/backimage.png);
 	font-family: "Noto Sans TC";
 	min-height: 100vh;
+	margin: 0;
 }
 
 /* BANNER TOP START */
 
 header{
-	position: fixed;
-	height: 11.5rem;
-	width: 100%;
+	position: static;
+	/* height: 9.5rem; */
+	/* width: 100%; */
 	top: 0%; left: 0%;
 	z-index: 1;
-}
-
-#header_space {
-	height: 11.5rem;
+	font-size: var(--fontsize-media);
 }
 
 #banner_top {
 	background-color: var(--color-banner);
-	height: 9rem;
+	height: 7rem;
+	position: var(--position-banner);
 	top: 0%;	left: 0%;
 	display: flex;
-	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+
+	width: 100%;
+	z-index: 1;
 }
 
 #banner_logo {
 	display: block;
-	margin: 5% 0% 5% 5%;
-	height: 90%;
-	max-height: 9rem;
-	width: auto;
+	margin: 5% 5% 5% 5%;
 	padding: 0;
+	height: 90%;
+	max-height: 7em;
+	width: auto;
 }
 
 #banner_slogan {
-    border-color: white;
-	max-height: 40%;
+    display: block;
+	margin: 2em 0 0.3em 0;
+	padding: 0;
+	height: 50%;
+	max-height: 3em;
 	width: auto;
-	position: absolute;
-	bottom: 10%;
-	margin: 0;
 }
 
 /* BANNER TOP END */
 /* NAV BAR START */
 
 nav {
-	background-color: var(--color-banner_bottom); 
-	height: 2.5rem;
-	top: 11rem;
+	/* border: 1px solid black; */
+	background-color: var(--color-banner_bottom);
+	height: 2.5em;
+	position: var(--position-navbar);
+	top: var(--top-navbar); left: 0;
+	width: 100%;
 	display: flex;
-}
-
-#navblock{
-	padding: 0;
-	margin: 0;
-	width: 3rem;
-	max-width: 5vw;
-
+	justify-content: space-between;
+	font-size: inherit;
+	z-index: 2;
 }
 
 #nav_bar {
-	list-style-type: none;
-	position: relative;
-	margin: 0rem;
-	padding: 0;
+	display: flex;
+	align-items: center;
+	
+	/* Below is for when I want to add a toggle button */
+	/* flex-direction: row-reverse; */
 }
 
+#nav_logo {
+	/* border: 1px solid red; */
+	display: none;
+	display: var(--display-navlogo);
+	padding: 0;
+	margin-left: 2vw;
+}
+
+#nav_logo img {
+	/* border: 1px solid red; */
+	display: block;
+	max-height: 2.0em;
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+
+#nav_bar ul {
+	/* border: 1px inset red; */
+	list-style-type: none;
+	margin: var(--margin-navbar);
+	padding: 0;
+	height: inherit;
+}
 
 .nav_items {
+	/* border: 1px inset red; */
 	display: inline-block;
-	padding: 0rem 1rem;
-	font-size: 1.1rem;
+	margin: 0;
+	padding: 0.0em 1em;
+	font-size: inherit;
+	font-size: 1.1em;
 	line-height: 2.5rem;
 }
 
@@ -113,19 +210,19 @@ nav {
 }
 
 #member_cart {
-	position: absolute;
+	/* border: 1px solid red; */
 	padding: 0;
 	margin: 0;
-	bottom: 0%;
-	right: 0.3rem;
-	height: 2.5rem;
+	height: 100%;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .cart_icons {
-	height: 1.7rem;
-	padding: 0rem 0.4rem;
+	font-size: inherit;
+	max-height: 1.9em;
+	padding: 0% 0.35em;
 }
 
 .cart_icons:hover {
@@ -135,17 +232,20 @@ nav {
 /* NAV BAR ENDS */
 /* BODY STARTS */
 
-
+main {
+	min-height: 100vh;
+	margin-top: var(--margin-headerspace);
+}
 
 /* BODY ENDS */
 /* FOOTER STARTS */
 
 footer {
 	background-color: var(--color-banner);
-	position: fixed;
-	right: 0; bottom: 0%;
 	width: 100%;
 	height: 2rem;
+	margin-top: 2em;
+	margin-bottom: 0;
 }
 
 #footer_details {
