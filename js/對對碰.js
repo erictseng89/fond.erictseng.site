@@ -26,10 +26,10 @@ function askCard() {
     // $(".gameBox").HTML = "";
     let boxValue = document.querySelector('#cardPlayBox').value;
     if (boxValue == "") {
-        cardPairs = 12;
+        cardPairs = 6;
     }
     else if (boxValue < 1 || boxValue > 52) {
-        cardPairs = 12;
+        cardPairs = 6;
     }
     else {
         cardPairs = document.querySelector('#cardPlayBox').value;
