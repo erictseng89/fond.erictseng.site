@@ -110,7 +110,8 @@ function reveal () {
     for (let i = 0; i < cardPlay; i++) {
         document.cardName[i].src=tempBank[i];
     }
-    setTimeout("hide()", 2000);
+    let revealTime = 1000 + cardPairs * 300;
+    setTimeout("hide()", revealTime);
     return;
 }
 
@@ -145,8 +146,6 @@ function check(index) {
         alert("請先按[開始] 洗牌");
     }
     else {
-
-
         if (flip == false) {
             document.cardName[index].src=tempBank[index];
             card1 = index;
@@ -194,7 +193,6 @@ function correct(card1, card2) {
     else {
         setTimeout("removeImg(card1, card2)", 500);
     }
-    
 }
 
 function removeImg (card1, card2) {
