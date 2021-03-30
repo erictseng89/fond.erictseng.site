@@ -73,14 +73,14 @@
 	}
 }
 
-/* @media (max-width: 325px) {
+ @media (max-width: 325px) {
 	:root {
 		font-size: 11px;
 		--fontsize-media: 14.5px;
 	}
 }
 
-@media (max-width: 290px) {
+/* @media (max-width: 290px) {
 	:root {
 		font-size: 11x;
 		--fontsize-media: 12px;
