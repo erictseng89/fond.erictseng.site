@@ -40,7 +40,7 @@
 @media (max-width: 950px) {
     :root {
 		font-size: 15px;
-		--fontsize-media: 15px;
+		--fontsize-media: 16px;
 		--position-banner: static;
 		--top-navbar: 0em;
 		--position-navbar: sticky;
@@ -53,7 +53,7 @@
 @media (max-width: 600px) {
 	:root {
 		font-size: 15px;
-		--fontsize-media: 15px;
+		--fontsize-media: 16px;
 		--margin-navbar: 0;
 		--display-navlogo: block;
 	}
@@ -61,38 +61,42 @@
 
 @media (max-width: 450px) {
 	:root {
-		font-size: 12px;
-		--fontsize-media: 12px;
+		font-size: 16px;
+		--fontsize-media: 18px;
 	}
 }
 
 @media (max-width: 380px) {
 	:root {
+		font-size: 12px;
+		--fontsize-media: 14px;
+	}
+}
+
+/* @media (max-width: 325px) {
+	:root {
 		font-size: 11px;
-		--fontsize-media: 11px;
+		--fontsize-media: 14.5px;
 	}
 }
 
-@media (max-width: 300px) {
+@media (max-width: 290px) {
 	:root {
-		font-size: 9.5px;
-		--fontsize-media: 9.5px;
+		font-size: 11x;
+		--fontsize-media: 12px;
 	}
-}
+} */
 
-@media (max-width: 275px) {
-	:root {
-		font-size: 9px;
-		--fontsize-media: 9px;
-	}
-}
-
-@media (max-width: 250px) {
+/* @media (max-width: 250px) {
 	:root {
 		font-size: 8px;
 		--fontsize-media: 8px;
 	}
-}
+} */
+
+
+	/* MEDIA QUERY END */
+
 
 
 	/* MEDIA QUERY END */
@@ -106,6 +110,13 @@ body {
 }
 
 
+	/* CLASSES START */
+
+.a:hover {
+	transform: scale(1.05);
+}
+
+	/* CLASSES END */
 	/* BANNER TOP START */
 
 
@@ -122,6 +133,7 @@ header{
 	position: var(--position-banner);
 	top: 0%;	left: 0%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
@@ -131,24 +143,23 @@ header{
 #banner_logo {
 	display: block;
 	margin: 5% 5% 5% 5%;
-	padding: 0;
 	height: 90%;
-	max-height: 7em;
+	max-height: 7rem;
 	width: auto;
 }
 
 #banner_slogan {
     display: block;
 	margin: 2em 0 0.3em 0;
-	padding: 0;
 	height: 50%;
-	max-height: 3em;
-	width: auto;
+	max-height: 3rem;
+	max-width: auto;
 }
 
 
-/* BANNER TOP END */
-/* NAV BAR START */
+	/* BANNER TOP END */
+	/* NAV BAR START */
+
 
 
 nav {
@@ -161,12 +172,13 @@ nav {
 	justify-content: space-between;
 	font-size: inherit;
 	z-index: 2;
+	font-size: var(--fontsize-media);
 }
 
 #nav_bar {
 	display: flex;
 	align-items: center;
-	
+	overflow: hidden;
 	/* Below is for when I want to add a toggle button */
 	/* flex-direction: row-reverse; */
 }
@@ -174,7 +186,31 @@ nav {
 #nav_logo {
 	display: var(--display-navlogo);
 	margin-left: 2vw;
+	display: none;
+	z-index: 6;
+	/* animation-play-state: paused; */
 }
+
+/* .logoSpinner {
+	animation-name: logoSpin;
+	animation-fill-mode: end;
+	animation-duration: 750ms;
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+}
+
+@keyframes logoSpin {
+	from {
+		transform: rotate(0deg);
+		transform: scale(0.3);
+		opacity: 0;
+	}
+	to {
+		transform: rotate(360deg);
+		transform: scale(1);
+		opacity: 1;
+	}
+} */
 
 #nav_logo img {
 	display: block;
@@ -193,12 +229,13 @@ nav {
 	padding: 0.0em 1em;
 	font-size: inherit;
 	font-size: 1.1em;
-	line-height: 2.5rem;
+	line-height: 2.5em;
 }
 
 .nav_items a{
 	text-decoration: none;
 	color: var(--color-brown);
+	overflow: hidden;
 }
 
 .nav_items:hover {
@@ -206,23 +243,69 @@ nav {
 	transform: scale(1.05);
 }
 
-#member_cart {
+.sideMenu {
+	/* border: 1px solid black; */
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--color-banner_bottom);
+	flex-wrap: wrap;
+	flex-direction:column;
+	align-items: flex-start;
+	z-index: 5;
+	
+}
+
+.sideMenu ul {
+	list-style-type: none;
+	margin: auto;
+	padding-inline-start: 0px;
+}
+
+.sideMenu li {
+	/* border: 1px solid black; */
+	margin: 0 auto;
+	padding: 0.5em 0.5em;
+	font-size: inherit;
+	font-size: 1.1em;
+	line-height: 2.50em;
+	text-align: center;
+}
+
+.sideMenu li:first-child {
+	padding-bottom: 1em;
+}
+
+.sideMenu a {
+	text-decoration: none;
+	color: var(--color-brown);
+}
+
+.member_cart {
+	padding: 0;
+	margin: 0;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	/* background-color: var(--color-banner_bottom) !important; */
 }
 
 .cart_icons {
 	font-size: inherit;
 	max-height: 1.9em;
 	padding: 0% 0.35em;
+	/* background-color: inherit; */
 }
 
 .cart_icons:hover {
 	transform: scale(1.3);
 }
 
+/* .logoBackgroundColor {
+	background-color: var(--color-banner_bottom);
+} */
 
 /* NAV BAR ENDS */
 /* MAIN STARTS */
@@ -230,7 +313,7 @@ nav {
 
 main {
 	min-height: 100vh;
-	margin-top: var(--margin-headerspace);
+	margin-top: var(--margin-headerspace) !important;
 }
 
 
@@ -243,6 +326,22 @@ footer {
 	width: 100%;
 	height: 2rem;
 	margin-top: 2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer a {
+	display: block;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1vw;
+}
+
+footer img {
+	max-height: 80%;
+	width: auto;
 }
 
 #footer_details {
