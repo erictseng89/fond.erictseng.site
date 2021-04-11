@@ -4,7 +4,7 @@
     <!-- CSS stylesheets -->
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/會員.css">
+        <link rel="stylesheet" href="CSS/購物車3.css">
     <!-- Javascript Libraries -->
         <script src="js/libraries/jquery-3.6.0.js"></script>
     <!-- font-family: "Noto Sans TC"; -->
@@ -52,29 +52,35 @@
         </div>
     </nav>
     <main>
-        <div class="bigBox">
-            <div class="memberLogin">
-                <h1>會員登入</h1>
-                <form>
-                    <span>帳號</span>
-                    <input type="text" placeholder="手機號碼">
-                    <span>密碼</span>
-                    <input type="text" placeholder="密碼">
-                    <input type="button" value="忘記密碼">
-                    <div class="loginBox">
-                        <a href="會員4.html"><input type="button" value="加入會員"></a>
-                        <a href="會員2.html"><input type="button" value="登入"></a>
-                    </div>
-                </form>
-                <div class="socialLogin">
-                        <a href="#"><img src="images/member/facebook_login.png" alt="Facebook Login"></a>
-                        <a href="#"><img src="images/member/btn_google_signin_light_normal_web@2x.png" alt="Google Login"></a>
-                </div>
-            </div>
-            <div class="promotion">
-                會員優惠
+        <div class="processBox">
+            <div class="process">
+                <div class="pointer pointerPink">購物清單</div>
+                <div class="pointer pointerPink">付款方式</div>
+                <div class="pointer pointerPink">寄送地址</div>
+                <div class="pointer pointerYellow">完成訂單</div>
             </div>
         </div>
+        <div class="contents">
+            <div class="details">
+                <h1>收件人資訊</h1>
+                <span>姓名</span>
+                <input type="text">
+                <span>手機號碼</span>
+                <input type="text">
+                <span>地址</span>
+                <input type="text"> 
+                <span>發票</span>
+                <div class="receiptBox">
+                    <input type="radio" value="二聯式" name="receipt" id="receiptA">
+                    <label for="receiptA">二聯式</label>
+                    <input type="radio" value="三聯式" name="receipt" id="receiptB">
+                    <label for="receiptB">三聯式</label>
+                </div>
+                <span>發票號碼</span>
+                <input type="text" placeholder="需要加 javascript" disabled> 
+            </div>
+            <div class="nextStepPointer"><a href="購物車4.html">送單</a></div>
+        </div>   
         
     </main>
     <footer>

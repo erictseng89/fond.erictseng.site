@@ -96,69 +96,63 @@ h1 {
 	background-color: var(--color-pink_soft);
 }
 
-.itemBox {
-	width: 90vw;
+.list {
+	display: flex;
+	flex-direction: column;
 	max-width: 800px;
-	/* background-color: var(--color-brown_comp); */
+	width: 90vw;
+	
 }
+
+.receiptNumber {
+	text-align: left;
+	font-size: 1.5rem;
+	margin: 1rem;
+}
+
 .item {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 0.5fr;
-	grid-template-rows: 1.5fr 2fr;
-	grid-template-areas: "image name name delete" "image price number total";
+	grid-template-columns: 5fr 1fr 1fr 1fr;
 	grid-gap: 0.5rem;
-	margin: 1rem;
-	border: 1px solid var(--color-darkblue_soft);
-	border-radius: 1rem;
+	margin: 0.5rem;
+	background-color: var(--color-brown_comp);
+	border-radius: 5px;
+
 }
 
 .item * {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding: 0.5rem 0;
+	margin: 0.5rem 0;
 }
 
-.itemImage {
-	grid-area: image;
-
-}
-.itemImage img {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.itemName {
-	grid-area: name;
-	text-align: left;
-}
-
-.item button {
-	grid-area: delete;
-}
-
-.itemPrice {
-	grid-area: price;
-}
-
-.itemNumber {
-	grid-area: number;
-}
-
-.itemTotal {
-	grid-area: total;
-}
-
-.total {
-	margin: 1rem 1rem;
+.postageDetails {
 	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-gap: 0.4rem;
-	align-self: flex-end;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 0.5rem;
+	align-self: flex-start;
+	margin: 1rem;
+	width:max-content;
+	padding: 0.5rem;
+	background-color: rgb(250, 242, 242);
 }
 
-.total span {
-	text-align: right;
+.postageDetails h1 {
+	grid-column: 1 / 3;
+	justify-self: left;
+}
+
+.postageDetails span {
+	padding: 0.3rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.postageDetails p {
+	padding: 0.3rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .nextStepPointer {

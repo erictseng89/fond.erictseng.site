@@ -4,7 +4,7 @@
     <!-- CSS stylesheets -->
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/會員.css">
+        <link rel="stylesheet" href="CSS/購物車2.css">
     <!-- Javascript Libraries -->
         <script src="js/libraries/jquery-3.6.0.js"></script>
     <!-- font-family: "Noto Sans TC"; -->
@@ -52,30 +52,46 @@
         </div>
     </nav>
     <main>
-        <div class="bigBox">
-            <div class="memberLogin">
-                <h1>會員登入</h1>
-                <form>
-                    <span>帳號</span>
-                    <input type="text" placeholder="手機號碼">
-                    <span>密碼</span>
-                    <input type="text" placeholder="密碼">
-                    <input type="button" value="忘記密碼">
-                    <div class="loginBox">
-                        <a href="會員4.html"><input type="button" value="加入會員"></a>
-                        <a href="會員2.html"><input type="button" value="登入"></a>
-                    </div>
-                </form>
-                <div class="socialLogin">
-                        <a href="#"><img src="images/member/facebook_login.png" alt="Facebook Login"></a>
-                        <a href="#"><img src="images/member/btn_google_signin_light_normal_web@2x.png" alt="Google Login"></a>
-                </div>
-            </div>
-            <div class="promotion">
-                會員優惠
+        <div class="processBox">
+            <div class="process">
+                <div class="pointer pointerPink">購物清單</div>
+                <div class="pointer pointerPink">付款方式</div>
+                <div class="pointer pointerYellow">寄送地址</div>
+                <div class="pointer pointerYellow">完成訂單</div>
             </div>
         </div>
-        
+        <div class="contents">
+            <div class="list">
+                <form>
+                    <div class="method">
+                        <input type="radio" name="paymentMethod">
+                        <p>7-11 取貨付款 <br> 滿xxx元免運費</p>
+                        <span>+60元</span>
+                    </div>
+                    <div class="method">
+                        <input type="radio" name="paymentMethod">
+                        <p>全家 取貨付款 <br> 滿xxx元免運費</p>
+                        <span>+60元</span>
+                    </div>
+                    <div class="method">
+                        <input type="radio" name="paymentMethod">
+                        <p>信用卡付款 <br> 滿xxx元免運費</p>
+                        <span>+0元</span>
+                    </div>
+                </form>
+            </div>
+            <div class="total">
+                <span>商品金額</span>
+                <p>xxx元</p>
+                <span>運費</span>
+                <p>xxx元</p>
+                <span>折扣</span>
+                <p>xxx元</p>
+                <span>小記</span>
+                <p>xxx元</p>
+            </div>
+            <div class="nextStepPointer"><a href="購物車3.html">寄送地址</a></div>
+        </div>
     </main>
     <footer>
         <a href="對對碰.html"><img src="Game/g52.jpg" alt="對對碰"></a>
@@ -86,6 +102,9 @@
         </ul>
     </footer>
     <!--k Javascript Scripts -->
+    <script>
+        
+    </script>
 <script src="js/template.js"></script>
 </body>
 </html>

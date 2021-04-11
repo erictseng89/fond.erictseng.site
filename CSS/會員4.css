@@ -1,0 +1,89 @@
+main * {
+	/* border: 1px solid black; */
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.heading {
+	width: 95vw;
+	max-width: 800px;
+	margin: 1rem;
+}
+
+main ul {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	font-size: 1.5rem;
+	background-color: var(--color-banner_bottom);
+}
+
+main li {
+	display: inline-block;
+	padding: 0.5rem;
+	/* margin: 0.5rem;; */
+	border-radius: 5px;
+}
+
+main li:nth-child(3) {
+	background-color: var(--color-pink_soft);
+}
+
+main li:hover {
+	background-color: var(--color-pink_soft);
+}
+
+main a {
+	text-decoration: none;
+	color: var(--color-brown);
+}
+
+h1 {
+	font-weight: bold;
+	margin-top: 1rem;
+}
+.formBox form{
+	width: 90vw;
+	max-width: 500px;
+	display: grid;
+	grid-template-columns: 30% 1fr;
+	grid-gap: 1rem;
+}
+
+form {
+	/* border: 1px solid black; */
+	padding: 1rem;
+
+}
+
+form * {
+	border-radius: 5px;
+}
+
+
+form span {
+	text-align: right;
+}
+
+form input[type="text"] {
+	text-align: left;
+	overflow: auto;
+	max-width:100%
+}
+
+.changePassword {
+	grid-column: 1 / 3;
+	justify-self: center;
+	font-weight: bold;
+}
+
+form input[type="button"] {
+	width: 50%;
+	justify-self: right;
+}

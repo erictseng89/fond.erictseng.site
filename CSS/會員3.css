@@ -1,0 +1,143 @@
+main * {
+	/* border: 1px solid black; */
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.heading {
+	width: 95vw;
+	max-width: 800px;
+	margin: 1rem;
+}
+
+main ul {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	font-size: 1.5rem;
+	background-color: var(--color-banner_bottom);
+}
+
+main li {
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+main li:nth-child(2) {
+	background-color: var(--color-pink_soft);
+}
+
+main li:hover {
+	background-color: var(--color-pink_soft);
+}
+
+main a {
+	text-decoration: none;
+	color: var(--color-brown);
+}
+
+.ordersBox {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+.orders {
+	border-radius: 0.5rem;
+	background: var(--color-darkblue_soft);
+	padding: 2rem;
+	margin: 2rem 0;
+}
+
+.orderStatus {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.orderStatus span {
+	margin: 0 0.5rem;
+	font-weight: bold;
+}
+
+.textAlignLeft {
+	text-align: left;
+}
+
+.textAlignRight {
+	text-align: right;
+}
+
+.pointerBox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pointer {
+	width: 7rem;
+	height: 3rem;
+	line-height: 3rem;
+	position: relative;
+	margin: 2rem;
+	background: gray;
+}
+
+.pointer:after {
+	content: "";
+	position: absolute;
+	left: -1.5rem;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 1.5rem solid transparent;
+	border-top: 1.5rem solid gray;
+	border-bottom: 1.5rem solid gray;	
+}
+
+.pointer:before {
+	content: "";
+	position: absolute;
+	right: -1.5rem;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 1.5rem solid gray;
+	border-top: 1.5rem solid transparent;
+	border-bottom: 1.5rem solid transparent;
+}
+
+.pointerPink {
+	background: var(--color-pink);	
+}
+
+.pointerPink:after {
+	border-top: 1.5rem solid var(--color-pink);
+	border-bottom: 1.5rem solid var(--color-pink);	
+}
+
+.pointerPink:before {
+	border-left: 1.5rem solid var(--color-pink);
+	border-top: 1.5rem solid transparent;
+	border-bottom: 1.5rem solid transparent;
+}
+
+.pointerYellow {
+	background: var(--color-yellow);	
+}
+
+.pointerYellow:after {
+	border-top: 1.5rem solid var(--color-yellow);
+	border-bottom: 1.5rem solid var(--color-yellow);	
+}
+
+.pointerYellow:before {
+	border-left: 1.5rem solid var(--color-yellow);
+	border-top: 1.5rem solid transparent;
+	border-bottom: 1.5rem solid transparent;
+}

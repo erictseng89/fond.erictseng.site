@@ -4,15 +4,18 @@
 	--fontsize-media: 20px;
 
 	/* COLORS */
-	--color-yellow: #F2C353;
-	--color-backgroundtint: rgba(245,245,245,0.5);
+	--color-yellow: rgba(242,195,83,1.0);
+	--color-backgroundtint: rgba(245,245,245,0.7);
 	--color-banner: rgba(247, 225, 161, 1);
-	--color-banner_bottom: rgba(247, 225, 161, 0.78);
-	--color-lightblue: #128BA6;
-	--color-darkblue: #004062;
-	--color-brown: #2E0E05;
-	--color-pink: #EC716E;
-	--color-orange: #EA6039;
+	--color-banner_bottom: rgba(247, 225, 161, 0.5);
+	--color-lightblue: rgba(18,139,166,1.0);
+	--color-darkblue: rgba(0,64,98,1.0);
+	--color-darkblue_soft: rgba(0,64,98,0.3);
+	--color-brown: rgba(46,14,5,1.0);
+	--color-brown_comp: rgba(5,46,41,0.2);
+	--color-pink: rgba(236,113,110,1.0);
+	--color-pink_soft: rgba(236,113,110,0.15);
+	--color-orange: rgba(234,96,57,1.0);
 
 	/* HEADER */
 	--position-banner: fixed;
@@ -22,7 +25,6 @@
 	--display-navlogo: none;
 	--margin-headerspace: 9.5em;
 }
-
 
 	/* MEDIA QUERY START */
 
@@ -106,6 +108,7 @@ body {
 	/* Uses linear gradient function to creates an Image which is added to the background stack  */
 	background: linear-gradient(var(--color-backgroundtint), var(--color-backgroundtint)), url(../images/backimage.png);
 	font-family: "Noto Sans TC";
+	color: var(--color-brown);
 	min-height: 100vh;
 }
 
@@ -117,14 +120,15 @@ body {
 }
 
 	/* CLASSES END */
-	/* BANNER TOP START */
+	/* BANNER START */
 
 
-header{
+header {
 	position: static;
 	top: 0%; left: 0%;
 	z-index: 1;
 	font-size: var(--fontsize-media);
+
 }
 
 #banner_top {
@@ -157,7 +161,7 @@ header{
 }
 
 
-	/* BANNER TOP END */
+	/* BANNER END */
 	/* NAV BAR START */
 
 
@@ -312,12 +316,13 @@ nav {
 
 
 main {
-	min-height: 100vh;
+	/* min-height: 95vh; */
+	min-height: 95vh;
 	margin-top: var(--margin-headerspace) !important;
 }
 
 
-/* BODY ENDS */
+/* MAIN ENDS */
 /* FOOTER STARTS */
 
 
