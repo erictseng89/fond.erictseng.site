@@ -1,0 +1,22 @@
+.center1 {
+    text-align: center;
+}
+.div_setting {
+    width: 50%;
+}
+.img {
+    width: 45%;
+    margin: 0 1%;
+}
+p {
+    padding: 1rem;
+}
+.intro {
+    height: 20rem;
+    width: 80rem;
+    background-color: var(--color-banner);
+}
+.intro2 {
+    width: 80rem;
+    background-color: var(--color-banner);
+}
