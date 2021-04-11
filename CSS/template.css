@@ -374,7 +374,8 @@ footer img {
 
 .footer_items a{
 	text-decoration: none;
-	color: var(--color-brown)
+	color: var(--color-brown);
+	margin: 0 0.5rem;
 }
 
 .footer_items:hover {
