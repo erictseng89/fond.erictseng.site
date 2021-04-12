@@ -1,14 +1,22 @@
-var slideIndex = 0;
-carousel();
+/* var i = 0;
+var images = [];
+var time = 3000;
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("slides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+images[0] = 'images/slideshow/slideshow1.jpg';
+images[1] = 'images/slideshow/slideshow2.jpeg';
+images[2] = 'images/slideshow/slideshow3.png';
+
+function changeImg() {
+    document.slides.src = images[i];
+
+    if (i < images.length - 1) {
+        i++;
+    }
+    else {
+        i = 0;
+    }
+
+    setTimeout("changeImg()", time);
 }
+
+window.onload = changeImg; */

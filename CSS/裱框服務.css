@@ -44,9 +44,14 @@ main{
     flex-wrap: wrap;
 }
 
-main h1{font-size: 40px;color: #2E0E05; text-align: center;}
+main h1 {
+    font-size: 40px;
+    color: #2E0E05; 
+    text-align: center;
+    padding: 1.2rem 0rem;
+}
 main p{font-size: 18px;color: #2E0E05;}
-main ul li{font-size: 30px;color: #2E0E05;justify-content: flex-start;}
+main ul li{font-size: 30px;color: #2E0E05;justify-content: flex-start;line-height: 40px;}
 
 #showcase {
     margin: 1em auto;
@@ -80,9 +85,9 @@ main ul li{font-size: 30px;color: #2E0E05;justify-content: flex-start;}
 }
 
 .tm-catalog-ph img {
-    object-fit: contain;
-    width: 500px;
-    height: 500px;  }
+    /* object-fit: contain; */
+    width: 90%;
+    height: 90%;  }
 
 .tm-catalog-name {
     position: relative;
@@ -96,5 +101,9 @@ main ul li{font-size: 30px;color: #2E0E05;justify-content: flex-start;}
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
 }
+
+
 

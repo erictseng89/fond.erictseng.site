@@ -1,22 +1,49 @@
+main {
+    color: var(--color-brown);
+}
 .center1 {
     text-align: center;
 }
+.flex1 {
+    Display : flex;
+    Justify-content : center;
+}
+.big1 {
+    font-size: 1.5rem;
+}
+.big2 {
+    font-size: 3rem;
+}
 .div_setting {
-    width: 50%;
+    margin: 0 auto;
+    width: 65%;
+}
+.div_setting2 {
+    margin: 0 3%;
+    background-color: var(--color-banner);
+    padding: 1%;
+}
+.div_setting3 {
+    position: relative;
+    right: 5%;
+}
+.div_setting4 {
+    position: relative;
+    left: 5%;
 }
 .img {
-    width: 45%;
-    margin: 0 1%;
+    width: 75%;
 }
 p {
-    padding: 1rem;
+    padding: 1%;
 }
 .intro {
-    height: 20rem;
-    width: 80rem;
+    margin: 1% auto;
+    width: 93%;
     background-color: var(--color-banner);
 }
 .intro2 {
-    width: 80rem;
+    margin: 1% auto;
+    width: 93%;
     background-color: var(--color-banner);
 }

@@ -94,6 +94,10 @@ h1 {
 	justify-content: flex-start;
 	margin: 1rem 0;
 	background-color: var(--color-pink_soft);
+	background-color: white;
+    padding: 2rem 0;
+    border: 1px solid var(--color-brown);
+    border-radius: 5px;
 }
 
 .list {
@@ -123,17 +127,28 @@ h1 {
 	height: 3rem;
 	line-height: 3rem;
 }
-
 .total {
 	margin: 1rem 1rem;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	grid-gap: 0.4rem;
+	grid-gap: 0.6rem;
 	align-self: flex-end;
+    border: 1px solid var(--color-brown);
+    padding: 1.5rem;
+    padding-left: 0;
+    border-radius: 5px;
 }
 
 .total span {
 	text-align: right;
+}
+
+.total p {
+    text-align: right;
+}
+
+.total p:last-of-type, span:last-of-type {
+    font-size: 1.5rem;
 }
 
 .nextStepPointer {

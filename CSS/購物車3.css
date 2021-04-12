@@ -93,7 +93,10 @@ h1 {
 	align-items: center;
 	justify-content: flex-start;
 	margin: 1rem 0;
-	background-color: var(--color-pink_soft);
+	/* background-color: var(--color-pink_soft); */
+	background-color: white;
+    border: 1px solid var(--color-brown);
+    border-radius: 5px;
 }
 
 .details {
@@ -109,6 +112,10 @@ h1 {
 
 .details span {
 	text-align: right;
+}
+
+.details input {
+    text-align: left;
 }
 
 

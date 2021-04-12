@@ -39,6 +39,7 @@ main a {
 
 main li:nth-child(1) {
 	background-color: var(--color-pink_soft);
+    background-color: white;
 }
 
 main li:hover {
@@ -61,15 +62,19 @@ main li:hover {
 table {
 	width: 90vh;
 	max-width: 800px;
+    border: 1px solid var(--color-brown);
 }
 
 table * {
 	height: 2rem;
 	line-height: 2rem;
+
 }
 
 table thead {
-	background-color: var(--color-pink_soft);
+	/* background-color: var(--color-pink_soft); */
+	background-color: var(--color-banner_bottom);
+
 }
 
 thead th {
@@ -94,13 +99,13 @@ thead th:nth-child(4) {
 }
 
 tbody tr:nth-child(odd) {
-	background-color: rgba(5,17,46,0.2);
+	background-color: white;
 }
 
 tbody tr:nth-child(even) {
-	background-color: rgba(5,46,34,0.2);
+	background-color: white;
 }
 
 table tfoot {
-	background-color: var(--color-pink_soft);
+	background-color: white;
 }

@@ -1,6 +1,7 @@
 main * {
 	/* border: 1px solid black; */
 	text-align: center;
+    border-radius: 5px;
 }
 
 main {
@@ -16,10 +17,12 @@ main {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
+    /* background-color: white; */
 }
 
 .memberLogin {
-	background-color: rgba(115, 243, 200, 0.5);
+    margin-top: 1rem;
+	background-color: var(--color-banner_bottom);
 	width: 85vw;
 	max-width: 400px;
 	height: 600px;
@@ -119,7 +122,7 @@ h1 {
 	background-color: rgba(181, 84, 46, 0.3);
 	width: 85vw;
 	max-width: 500px;
-	height: 400px;
+	height: 600px;
 	margin: 2rem;
 }
 

@@ -27,8 +27,7 @@
     </header>
     <nav>            
         <div id="nav_bar">            
-            <div id="nav_logo"><img src="images/logo2.png" alt="Logo"></div>
-            <ul class="horizontalNav">
+            <div id="nav_logo"><a href="index.html"><img src="images/logo2.png" alt="Logo"></a></div>
                 <li class="nav_items"><a href="訂製拼圖.html">訂製拼圖</a></li>
                 <li class="nav_items"><a href="裱框服務.html">裱框服務</a></li>
                 <li class="nav_items"><a href="拼圖遊戲.html">拼圖遊戲</a></li>
@@ -52,9 +51,38 @@
         </div>
     </nav>
     <main>
-        
+        <div class="content">
+            <div class="upper">
+                <select class="selection">
+                    <option selected disabled>請選擇格式</option>
+                    <optgroup label="方形"></option>
+                    <option optgroup value="squareXLarge">特大</option>
+                    <option optgroup value="squareLarge">大</option>
+                    <option optgroup value="squareMedium">中</option>
+                    <option optgroup value="squareSmall">小</option>
+                    <optgroup label="圓形"></option>
+                    <option optgroup value="circleSmall">小</option>
+                    <optgroup label="橢圓形"></option>
+                    <option optgroup value="ovalHorizontal">橫向</option>
+                    <option optgroup value="ovalVertical">直向</option>
+                    <optgroup label="心型"></option>
+                    <option optgroup value="heartLarge">大</option>
+                    <option optgroup value="heartSmall">小</option>
+                </select>
 
-        
+                <select id="frameSelection">
+                    <option selected disabled>請選格式</option>
+                </select>
+                <div id="specsBox"></div>
+                <input type="button" value="置入相片">
+                <input type="button" value="加入購物車">
+
+            </div>
+            <div class="flowchart">
+                <img src="images/flowchart.jpg" alt="">
+            </div>
+
+        </div>     
     </main>
     <footer>
         <a href="對對碰.html"><img src="Game/g52.jpg" alt="對對碰"></a>
@@ -65,6 +93,7 @@
         </ul>
     </footer>
     <!--k Javascript Scripts -->
+    <script src="js/product.js"></script>
 <script src="js/template.js"></script>
 </body>
 </html>

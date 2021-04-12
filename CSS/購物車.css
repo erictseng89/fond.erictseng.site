@@ -93,7 +93,11 @@ h1 {
 	align-items: center;
 	justify-content: flex-start;
 	margin: 1rem 0;
-	background-color: var(--color-pink_soft);
+	/* background-color: var(--color-pink_soft); */
+	background-color: white;
+    border: 1px solid var(--color-brown);
+    border-radius: 5px;
+    padding: 1.5rem 0;
 }
 
 .itemBox {
@@ -101,6 +105,7 @@ h1 {
 	max-width: 800px;
 	/* background-color: var(--color-brown_comp); */
 }
+
 .item {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 0.5fr;
@@ -118,8 +123,17 @@ h1 {
 	justify-content: center;
 }
 
+.item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .itemImage {
+    margin-left: 1rem;
 	grid-area: image;
+    max-width: 5rem;
+    max-height: 5rem;
 
 }
 .itemImage img {
@@ -130,7 +144,8 @@ h1 {
 
 .itemName {
 	grid-area: name;
-	text-align: left;
+	justify-self: left;
+    font-size: 1.5rem;
 }
 
 .item button {
@@ -139,6 +154,7 @@ h1 {
 
 .itemPrice {
 	grid-area: price;
+    justify-self: right;
 }
 
 .itemNumber {
@@ -153,12 +169,20 @@ h1 {
 	margin: 1rem 1rem;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	grid-gap: 0.4rem;
+	grid-gap: 0.6rem;
 	align-self: flex-end;
 }
 
 .total span {
 	text-align: right;
+}
+
+.total p {
+    text-align: right;
+}
+
+.total p:last-of-type, span:last-of-type {
+    font-size: 1.5rem;
 }
 
 .nextStepPointer {

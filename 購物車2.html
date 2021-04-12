@@ -27,8 +27,7 @@
     </header>
     <nav>            
         <div id="nav_bar">            
-            <div id="nav_logo"><img src="images/logo2.png" alt="Logo"></div>
-            <ul class="horizontalNav">
+            <div id="nav_logo"><a href="index.html"><img src="images/logo2.png" alt="Logo"></a></div>
                 <li class="nav_items"><a href="訂製拼圖.html">訂製拼圖</a></li>
                 <li class="nav_items"><a href="裱框服務.html">裱框服務</a></li>
                 <li class="nav_items"><a href="拼圖遊戲.html">拼圖遊戲</a></li>
@@ -64,31 +63,31 @@
             <div class="list">
                 <form>
                     <div class="method">
-                        <input type="radio" name="paymentMethod">
-                        <p>7-11 取貨付款 <br> 滿xxx元免運費</p>
+                        <input type="radio" name="paymentMethod" value="sevenEleven">
+                        <p>7-11 取貨付款 <br> 滿2000元免運費</p>
                         <span>+60元</span>
                     </div>
                     <div class="method">
-                        <input type="radio" name="paymentMethod">
-                        <p>全家 取貨付款 <br> 滿xxx元免運費</p>
+                        <input type="radio" name="paymentMethod" value="familyMart">
+                        <p>全家 取貨付款 <br> 滿2000元免運費</p>
                         <span>+60元</span>
                     </div>
                     <div class="method">
-                        <input type="radio" name="paymentMethod">
-                        <p>信用卡付款 <br> 滿xxx元免運費</p>
+                        <input type="radio" name="paymentMethod" value="creditCard">
+                        <p>信用卡付款 <br> 滿2000元免運費</p>
                         <span>+0元</span>
                     </div>
                 </form>
             </div>
             <div class="total">
                 <span>商品金額</span>
-                <p>xxx元</p>
+                <p>2100元</p>
                 <span>運費</span>
-                <p>xxx元</p>
+                <p id="costDelivery">0元</p>
                 <span>折扣</span>
-                <p>xxx元</p>
+                <p id="costDiscount">0元</p>
                 <span>小記</span>
-                <p>xxx元</p>
+                <p>2100元</p>
             </div>
             <div class="nextStepPointer"><a href="購物車3.html">寄送地址</a></div>
         </div>
@@ -101,10 +100,8 @@
             <li class="footer_items"><a href="聯絡資訊.html">聯絡資訊</a></li>
         </ul>
     </footer>
-    <!--k Javascript Scripts -->
-    <script>
-        
-    </script>
-<script src="js/template.js"></script>
+    <!-- Javascript Scripts -->
+    <script src="js/cart2.js"></script>
+    <script src="js/template.js"></script>
 </body>
 </html>
