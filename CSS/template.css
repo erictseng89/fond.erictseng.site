@@ -71,21 +71,21 @@
 	}
 }
 
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
 	:root {
 		font-size: 15px;
 		--fontsize-media: 14px;
 	}
-} */
+}
 
-/*  @media (max-width: 360px) {
+ @media (max-width: 360px) {
 	:root {
 		font-size: 12px;
 		--fontsize-media: 12.5px;
 	}
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
 	:root {
 		font-size: 11x;
 		--fontsize-media: 12px;
