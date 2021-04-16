@@ -1,18 +1,22 @@
 main * {
 	/* border: 1px solid black; */
 	text-align: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 main {
-	display: grid;
-	place-items: center;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bigBox {
-	/* background-color: lightpink; */
+    margin-top: 1rem;
+	background-color: white;
+    /* border: 1px solid var(--color-brown); */
+    border-radius: 5px;
 	width: 90vw;
-	max-width: 1000px;
+	max-width: 1200px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -21,8 +25,10 @@ main {
 }
 
 .memberLogin {
-    margin-top: 1rem;
-	background-color: var(--color-banner_bottom);
+	/* background-color: var(--color-banner_bottom); */
+	background-color: white;
+    /* border: 1px solid var(--color-brown); */
+    /* border-radius: 5px; */
 	width: 85vw;
 	max-width: 400px;
 	height: 600px;
@@ -31,6 +37,10 @@ main {
 	justify-content: space-evenly;
 	align-items: center;
 	font-size: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 2rem;
+    margin-right: 0.5rem;
+
 }
 
 .memberLogin form {
@@ -52,18 +62,24 @@ form span {
 }
 form input {
 	/* height: 2em; */
-	padding: 1em 0;
+	padding: 0.5rem 0;
 }
 
+form input[type=button] {
+    width: 70%;
+}
+
+
 .memberLogin span {
-	background-color: var(--color-lightblue);
+	/* background-color: var(--color-lightblue); */
 	padding: 3px;
 	border-radius: 3px;
+
 }
 
 .memberLogin input[value=忘記密碼] {
 	grid-column: 2 / 3;
-	width: 60%;
+	width: 50%;
 	justify-self: flex-end;
 }
 
@@ -115,7 +131,7 @@ form input {
 
 h1 {
 	font-size: 2em;
-	margin-top: -20px;
+	/* margin-top: -20px; */
 }
 
 .promotion {
@@ -124,5 +140,6 @@ h1 {
 	max-width: 500px;
 	height: 600px;
 	margin: 2rem;
+    margin-left: 0.5rem;
 }
 

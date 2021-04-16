@@ -10,12 +10,15 @@ main {
 	align-items: center;
 }
 
-.heading {
-	width: 95vw;
+.contents {
+    background-color: white;
+    width: 95vw;
 	max-width: 800px;
-	margin: 1rem;
-
+    margin-top: 1rem;
 }
+
+
+
 
 main ul {
 	display: flex;
@@ -39,18 +42,13 @@ main a {
 
 main li:nth-child(1) {
 	background-color: var(--color-pink_soft);
-    background-color: white;
 }
 
 main li:hover {
 	background-color: var(--color-pink_soft);
 }
 
-.ordersBox {
-	width: 95vh;
-	max-width: 900px;
-	margin: 1rem;
-}
+
 
 .orders {
 	display: flex;
@@ -59,7 +57,121 @@ main li:hover {
 	background-color: ;
 }
 
-table {
+.itemBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 90vw;
+	max-width: 700px;
+	/* background-color: var(--color-brown_comp); */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.orderDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem 0 0;
+}
+
+.contents h1, h2 {
+    width: fit-content;
+    align-self: flex-start;
+    font-size: 1.2rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.item {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 0.5fr;
+	grid-template-rows: 1.5fr 2fr;
+	grid-template-areas: "image name name delete" "image price number total";
+	grid-gap: 0.5rem;
+	/* margin: 0.2rem 1rem; */
+	border: 1px solid var(--color-darkblue_soft);
+	border-radius: 1rem;
+    width: 97%;
+}
+
+.item * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    
+}
+
+.item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.itemImage {
+    margin-left: 1rem;
+	grid-area: image;
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.itemImage img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.itemName {
+	grid-area: name;
+	justify-self: left;
+    font-size: 1.2rem;
+}
+
+.item button {
+	grid-area: delete;
+}
+
+.itemPrice {
+	grid-area: price;
+    justify-self: right;
+}
+
+.itemNumber {
+	grid-area: number;
+}
+
+.itemTotal {
+	grid-area: total;
+}
+
+.total {
+	margin: 1rem 1rem;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 0.6rem;
+	align-self: flex-end;
+}
+
+.total span {
+	text-align: right;
+}
+
+.total p {
+    text-align: right;
+}
+
+.total span {
+	text-align: right;
+}
+
+.total p {
+    text-align: right;
+}
+
+.total p:last-of-type, span:last-of-type {
+    font-size: 1.2rem;
+}
+
+/* table {
 	width: 90vh;
 	max-width: 800px;
     border: 1px solid var(--color-brown);
@@ -72,7 +184,6 @@ table * {
 }
 
 table thead {
-	/* background-color: var(--color-pink_soft); */
 	background-color: var(--color-banner_bottom);
 
 }
@@ -108,4 +219,4 @@ tbody tr:nth-child(even) {
 
 table tfoot {
 	background-color: white;
-}
+} */

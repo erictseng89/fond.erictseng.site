@@ -10,10 +10,18 @@ main {
 	align-items: center;
 }
 
+.contents {
+    background-color: white;
+    width: 95vw;
+	max-width: 800px;
+    margin-top: 1rem;
+}
+
 .heading {
 	width: 95vw;
 	max-width: 800px;
-	margin: 1rem;
+    width: 100%;
+	/* margin: 1rem; */
 }
 
 main ul {
@@ -51,11 +59,8 @@ main a {
 
 .orders {
 	border-radius: 0.5rem;
-	/* background: var(--color-darkblue_soft); */
-	background: rgb(224, 223, 223);
 	padding: 2rem;
-	margin: 2rem 0;
-    /* color: black; */
+	margin: 1rem 0;
 }
 
 .orderStatus {
@@ -66,6 +71,7 @@ main a {
 .orderStatus span {
 	margin: 0 0.5rem;
 	font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .textAlignLeft {
@@ -78,16 +84,28 @@ main a {
 
 .pointerBox {
 	display: flex;
+    justify-content: center;
 	flex-wrap: wrap;
 }
 
 .pointer {
-	width: 7rem;
+	width: 5.5rem;
 	height: 3rem;
 	line-height: 3rem;
 	position: relative;
-	margin: 2rem;
+	margin: 1rem;
 	background: gray;
+    opacity: 0.8;
+}
+
+.pointerCurrent {
+    opacity: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pointer:hover {
+    opacity: 1;
 }
 
 .pointer:after {
