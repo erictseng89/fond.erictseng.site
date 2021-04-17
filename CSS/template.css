@@ -78,7 +78,7 @@
 	}
 }
 
- @media (max-width: 360px) {
+ @media (max-width: 370px) {
 	:root {
 		font-size: 12px;
 		--fontsize-media: 12px;
