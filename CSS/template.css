@@ -5,7 +5,8 @@
 
 	/* COLORS */
 	--color-yellow: rgba(242,195,83,1.0);
-	--color-hover: #FFCEC7;
+	/* --color-hover: #FFCEC7; */
+	--color-hover: #FFD0A6;
 	--color-backgroundtint: rgba(245,245,245,0.6);
 	/* --color-banner: rgba(247, 225, 161, 1);
 	--color-banner_bottom: rgba(247, 225, 161, 0.8); */
