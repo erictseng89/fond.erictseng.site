@@ -6,18 +6,25 @@
 	/* COLORS */
 	--color-yellow: rgba(242,195,83,1.0);
 	--color-backgroundtint: rgba(245,245,245,0.6);
-	--color-banner: rgba(247, 225, 161, 1);
+	/* --color-banner: rgba(247, 225, 161, 1);
+	--color-banner_bottom: rgba(247, 225, 161, 0.8); */
+	/* --color-banner: rgb(194, 202, 159); */
+	/* --color-banner: hsla(13, 40%, 87%, 1); */
+	/* --color-banner: hsla(13, 40%, 87%, 1); */
+	--color-banner: hsl(26, 85%, 92%);
 	--color-banner_light: rgba(247, 225, 161,1);
-	--color-banner_bottom: rgba(247, 225, 161, 0.8);
+	--color-banner_bottom: hsl(26, 85%, 92%, 0.8);
+	/* --color-banner_bottom: 	hsla(13, 40%, 87%, 0.7); */
+	/* --color-banner_bottom: hsla(1, 40%, 85%, 0.7); */
 	--color-lightblue: rgba(18,139,166,1.0);
 	--color-darkblue: rgba(0,64,98,1.0);
 	--color-darkblue_soft: rgba(0,64,98,0.3);
 	--color-brown: rgb(46, 14, 5);
 	--color-brown_soft: rgba(46,14,5,0.8);
 	--color-brown_comp: rgba(5,46,41,0.2);
-	--color-pink: rgba(236,113,110,1.0);
+	--color-pink: hsl(1, 77%, 68%);
 	--color-pink_soft: rgba(236,113,110,0.15);
-	--color-orange: rgba(234,96,57,1.0);
+	--color-orange: hsl(13, 81%, 57%);
     --color-textinput: rgb(245, 245, 245);
 
 	/* HEADER */
@@ -201,6 +208,7 @@ nav {
 	z-index: 2;
 	font-size: var(--fontsize-media);
 }
+
 
 #nav_bar {
 	display: flex;
