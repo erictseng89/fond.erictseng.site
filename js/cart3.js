@@ -2,10 +2,13 @@ function enableReceipt() {
     let chosenReceipt = $('input[name=receipt]:checked').val();
 
     if (chosenReceipt === "三聯式") {
-        $('#receiptNumber')[0].disabled = false;
+
+        $('#receipt').slideDown(300);
+        // $('#receipt').addClass("receiptGrid");
+        $('#receipt').css("display", "grid");
     }
     else {
-        $('#receiptNumber')[0].disabled = true;
+        $('#receipt').slideUp(200);
     }
 }
 

@@ -125,6 +125,8 @@ body {
 .textinput {
     background-color: var(--color-textinput);
     border: 0px solid white;
+	padding: 0.5em;
+	border-radius: 3px;
 }
 
 .brownborder {

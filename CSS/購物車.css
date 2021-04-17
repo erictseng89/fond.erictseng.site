@@ -166,16 +166,17 @@ h1 {
 	width: 1.2rem;
 	margin: 0 0.1rem;
 }
+.itemNumberBox input[name=itemNumber] {
+	font-size: 1rem;
+}
 .increment {
 	display: flex;
 	flex-direction: column;
-	margin: 0 0.1rem;
+	margin: 0. 0.1rem;
 }
 
-
 .increment button {
-	/* background: transparent;
-	border: none; */
+	padding: 0rem 0.1rem;
 }
 
 .itemTotal {
