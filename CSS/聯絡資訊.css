@@ -1,7 +1,3 @@
-main * {
-	/* border: 1px solid black; */
-}
-
 main {
 	display: flex;
 	flex-direction: column;
@@ -17,29 +13,32 @@ main {
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	font-size: 24px;
+	font-size: 1.3rem;
     border: 1px solid var(--color-brown);
     border-radius: 5px;
 }
 
 h1 {
-	margin: 20px 10px;
-	font-size: 2em;
+	margin: 1rem 0;
+	font-size: 2rem;
 }
 
 .bigBox p {
+	max-width: 85vw;
 	margin: 40px 0px;
+	line-height: 2rem;
+	
 }
 
 .bigBox form {
 	/* background-color: black; */
 	display: grid;
-	grid-template-columns: 30% 1fr;
+	grid-template-columns: minmax(10%, 30%) 1fr;
 	grid-gap: 0.5em;
-	width: 90vw;
+	width: 85vw;
 	max-width: 700px;
 	text-align: end;
-	margin: 20px;
+	/* margin: 20px; */
 }
 
 form * {
@@ -47,10 +46,10 @@ form * {
 	border-radius: 5px;
 }
 
-
 form input[type="submit"] {
 	grid-column: 2 / 3;
 	width: 50%;
 	justify-self: flex-end;
 	height: 2.5rem;
+	margin-bottom: 2rem;
 }
