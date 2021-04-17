@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="CSS/template.css">
         <link rel="stylesheet" href="CSS/購物車.css">
     <!-- Javascript Libraries -->
-        <script src="js/libraries/jquery-3.6.0.js"></script>
+
     <!-- font-family: "Noto Sans TC"; -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -62,42 +62,95 @@
         <div class="contents">
             <div class="list">
                 <div class="itemBox">
-                    <div class="item">
-                        <div class="itemImage"><img src="images/首頁照片/cat_oval_相框.png" alt=""></div>
-                        <!-- <span class="itemName">橢圓形 - 直向 (220片)</span> -->
-                        <span class="itemName">!!要加 上下 與 刪除</span>
-                        <input type="button" value="刪除">
-                        <p class="itemPrice">800元</p>
-                        <p class="itemNumber">x1</p>
-                        <p class="itemTotal">800元</p>
+                    <div class="item" name="itemRow">
+                        <div class="itemImage">
+                            <img src="images/首頁照片/cat_oval_相框.png" alt="">
+                        </div>
+                        <span class="itemName" name="itemName">橢圓形 - 直向 (220片)</span>
+                        <input type="button" value="刪除" name="itemDelete">
+                        <p class="itemPrice" name="itemPrice">600元</p>
+                        <div class="itemNumberBox">
+                            <input type="text" value="1" name="itemNumber">
+                            <div class="increment">
+                                <button name="itemAdd">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-up" width="20" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2e0e05" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h36v36H0z" fill="none"/>
+                                    <path d="M24 20l-12 -12l-12 12h22" />
+                                  </svg>
+                                </button>
+                                <button name="itemMinus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="20" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2e0e05" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M24 20l-12 -12l-12 12h22" transform="rotate(180 12 12)" />
+                                        </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="itemTotal" name="itemTotal"></p>
                     </div>
-                    <div class="item">
-                        <div class="itemImage"><img src="images/首頁照片/Circle_相框.png" alt=""></div>
-                        <span class="itemName">圓形 - 小 (70片)</span>
-                        <input type="button" value="刪除">
-                        <p class="itemPrice">300元</p>
-                        <p class="itemNumber">x2</p>
-                        <p class="itemTotal">600元</p>
+                    <div class="item" name="itemRow">
+                        <div class="itemImage">
+                            <img src="images/首頁照片/Circle_相框.png" alt="">
+                        </div>
+                        <span class="itemName" name="itemName" >圓形 - 小 (70片)</span>
+                        <input type="button" value="刪除" name="itemDelete">
+                        <p class="itemPrice" name="itemPrice">300元</p>
+                        <div class="itemNumberBox">
+                            <input type="text" value="2" name="itemNumber">
+                            <div class="increment">
+                                <button name="itemAdd">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-up" width="20" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2e0e05" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h36v36H0z" fill="none"/>
+                                    <path d="M24 20l-12 -12l-12 12h22" />
+                                  </svg>
+                                </button>
+                                <button name="itemMinus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="20" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2e0e05" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M24 20l-12 -12l-12 12h22" transform="rotate(180 12 12)" />
+                                        </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="itemTotal" name="itemTotal"></p>
                     </div>
-                    <div class="item">
-                        <div class="itemImage"><img src="images/首頁照片/相框2.png" alt=""></div>
-                        <span class="itemName">方形 - 大 (240片)</span>
-                        <input type="button" value="刪除">
-                        <p class="itemPrice">700元</p>
-                        <p class="itemNumber">x1</p>
-                        <p class="itemTotal">700元</p>
+                    <div class="item" name="itemRow">
+                        <div class="itemImage">
+                            <img src="images/首頁照片/相框2.png" alt="">
+                        </div>
+                        <span class="itemName" name="itemName">橢圓形 - 直向 (220片)</span>
+                        <input type="button" value="刪除" name="itemDelete">
+                        <p class="itemPrice" name="itemPrice">700元</p>
+                        <div class="itemNumberBox">
+                            <input type="text" value="3" name="itemNumber">
+                            <div class="increment">
+                                <button name="itemAdd">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-up" width="20" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2e0e05" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h36v36H0z" fill="none"/>
+                                    <path d="M24 20l-12 -12l-12 12h22" />
+                                  </svg>
+                                </button>
+                                <button name="itemMinus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="20" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2e0e05" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M24 20l-12 -12l-12 12h22" transform="rotate(180 12 12)" />
+                                        </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="itemTotal" name="itemTotal"></p>
                     </div>
                 </div>
             </div>
             <div class="total">
                 <span>商品金額</span>
-                <p>2100元</p>
+                <p id="priceItems">0元</p>
                 <span>運費</span>
-                <p>0元</p>
+                <p id="priceDelivery">0元</p>
                 <span>折扣</span>
-                <p>0元</p>
+                <p id="priceDiscount">0元</p>
                 <span>小記</span>
-                <p>2100元</p>
+                <p id="priceGrand">0元</p>
             </div>  
             <div class="nextStepPointer">
                 <a href="購物車2.html">付款方式</a>
@@ -116,6 +169,7 @@
         </ul>
     </footer>
     <!--k Javascript Scripts -->
+    <script src="js/libraries/jquery-3.6.0.js"></script>
 <script src="js/cart1.js"></script>
 <script src="js/template.js"></script>
 </body>

@@ -115,6 +115,7 @@ h1 {
 	margin: 1rem;
 	border: 1px solid var(--color-darkblue_soft);
 	border-radius: 1rem;
+
 }
 
 .item * {
@@ -122,6 +123,7 @@ h1 {
 	align-items: center;
 	justify-content: center;
 }
+
 
 .item img {
     display: block;
@@ -157,8 +159,23 @@ h1 {
     justify-self: right;
 }
 
-.itemNumber {
+.itemNumberBox {
 	grid-area: number;
+}
+.itemNumberBox input {
+	width: 1.2rem;
+	margin: 0 0.1rem;
+}
+.increment {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0.1rem;
+}
+
+
+.increment button {
+	/* background: transparent;
+	border: none; */
 }
 
 .itemTotal {

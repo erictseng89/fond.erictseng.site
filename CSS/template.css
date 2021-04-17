@@ -12,7 +12,7 @@
 	--color-lightblue: rgba(18,139,166,1.0);
 	--color-darkblue: rgba(0,64,98,1.0);
 	--color-darkblue_soft: rgba(0,64,98,0.3);
-	--color-brown: rgba(46,14,5,1.0);
+	--color-brown: rgb(46, 14, 5);
 	--color-brown_soft: rgba(46,14,5,0.8);
 	--color-brown_comp: rgba(5,46,41,0.2);
 	--color-pink: rgba(236,113,110,1.0);
@@ -251,7 +251,7 @@ nav {
 
 .nav_items {
 	display: inline-block;
-	padding: 0.0em 1em;
+	padding: 0.0em 0.7em;
 	font-size: inherit;
 	font-size: 1.1em;
 	line-height: 2.5em;
