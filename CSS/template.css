@@ -44,8 +44,8 @@
 
 @media (max-width: 950px) {
     :root {
-		font-size: 15px;
-		--fontsize-media: 16px;
+		font-size: 18px;
+		--fontsize-media: 18px;
 		--position-banner: static;
 		--top-navbar: 0em;
 		--position-navbar: sticky;
@@ -57,7 +57,7 @@
 
 @media (max-width: 600px) {
 	:root {
-		font-size: 15px;
+		font-size: 16px;
 		--fontsize-media: 16px;
 		--margin-navbar: 0;
 		--display-navlogo: block;
@@ -66,22 +66,22 @@
 
 @media (max-width: 450px) {
 	:root {
-		font-size: 16px;
-		--fontsize-media: 15.5px;
+		font-size: 14px;
+		--fontsize-media: 14px;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 395px) {
 	:root {
-		font-size: 15px;
-		--fontsize-media: 14px;
+		font-size: 13px;
+		--fontsize-media: 13px;
 	}
 }
 
  @media (max-width: 360px) {
 	:root {
 		font-size: 12px;
-		--fontsize-media: 12.5px;
+		--fontsize-media: 12px;
 	}
 }
 
@@ -353,7 +353,7 @@ main {
 
 
 
-/* footer {
+footer {
 	background-color: var(--color-banner);
 	font-size: var(--fontsize-media);
 	width: 100%;
@@ -408,7 +408,7 @@ footer img {
 .footer_items:hover {
 	background-color: var(--color-yellow);
 	transform: scale(1.05);
-} */
+}
 
 
 /* FOOTER ENDS */

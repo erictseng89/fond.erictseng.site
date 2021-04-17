@@ -16,36 +16,14 @@
 
 /* SLIDESHOW START */
 
-#slideshow {
-    margin: 1em auto;
-    width: 90vw;
+.slideshow {
+    margin: 2rem auto;
+    width: 95vw;
     max-width: 60rem;
     height: auto;
+    padding: 1rem;
 }
 
-#slide_main {
-    margin: auto;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.slides{
-    border-width: 0.3rem;
-    border-style: solid;
-    border-color: white;
-    display: block;
-    margin: 0rem auto;
-    max-width: 100%;
-    height: auto;
-}
-
-#slide_button_row {
-    margin: 0 auto;
-}
-
-#slide_button_row button {
-    margin: auto;
-}
 
 /* SLIDESHOW ENDS */
 /* SHOWCASE STARTS */
@@ -53,8 +31,7 @@
 #showcase {
     /* border: 1px solid red; */
     margin: 1em auto;
-    position: relative;
-    height: auto;
+    /* height: auto; */
     width: 90vw;
     max-width: 54rem;
     display: flex;
