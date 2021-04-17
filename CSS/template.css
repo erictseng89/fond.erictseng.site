@@ -85,12 +85,12 @@
 	}
 }
 
-/* @media (max-width: 320px) {
+@media (max-width: 340px) {
 	:root {
 		font-size: 11x;
-		--fontsize-media: 12px;
+		--fontsize-media: 11px;
 	}
-} */
+}
 
 /* @media (max-width: 250px) {
 	:root {
