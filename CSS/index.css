@@ -20,7 +20,7 @@ html {
     -webkit-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
     scroll-snap-type: y mandatory;
-    --top-spacing: 7rem;
+    --top-spacing: 6rem;
     scroll-padding-top: var(--top-spacing);
 }
 
@@ -88,7 +88,7 @@ section {
 
 
 .interesting {
-    height: 20rem;
+    height: 25rem;
     width: 100%;
     background-color: var(--color-yellow_light);
 }
@@ -117,7 +117,9 @@ section {
 .item p {
     font-size: 1rem;
     font-weight: bold;
+    margin-top: 0.5rem;
 }
+
 
 .information {
     max-width: 54rem;
@@ -146,7 +148,7 @@ section {
     line-height: 1.5rem;
 }
 
-.details h1 {
+h1 {
     font-size: 1.3rem;
     font-weight: bold;
     margin: 1rem 0;
@@ -165,4 +167,66 @@ section {
     /* display: block; */
     max-height: 100%;
     max-width: 100%;
+}
+
+#postage {
+    background-color: var(--color-yellow_light);
+
+}
+
+#postageSection ol li{
+    list-style-type: decimal;
+    line-height: 1.5rem;
+    text-justify: distribute;
+}
+
+
+/* #postageSection {
+
+} */
+
+#contactSection {
+    display: grid;
+    place-items: center;
+    height: 20rem;
+    background-color: var(--color-yellow_light);
+}
+
+.contactContents {
+    display: grid;
+    place-items: center;
+    max-width: 42rem;
+    width: 90vw;
+}
+
+.contactContents form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+form span {
+    padding: 0.5rem;
+}
+
+.contactName, .contactNumber, .contactEmail {
+    width: 90vw;
+    max-width: 250px;
+}
+
+.contactMessage{
+    width: 100%;
+}
+
+.contactMessage input {
+    height: 15vh;
 }

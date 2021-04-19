@@ -8,7 +8,7 @@
 	/* --color-hover: hsl(8, 100%, 89%); */
 	--color-hover: hsl(28, 100%, 83%);
 	--color-backgroundtint: rgba(245,245,245,0.6);
-	--color-yellow_light: rgba(247, 225, 161, 1);
+	--color-yellow_light: rgb(240, 221, 163);
 	/* --color-banner_bottom: rgba(247, 225, 161, 0.8); */
 	--color-banner: hsl(26, 85%, 92%);
 	--color-banner_light: rgba(247, 225, 161,1);
