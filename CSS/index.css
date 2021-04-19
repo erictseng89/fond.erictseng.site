@@ -90,7 +90,7 @@ section {
 .interesting {
     height: 20rem;
     width: 100%;
-    background-color: var(--color-banner);
+    background-color: var(--color-yellow_light);
 }
 
 .contents {
