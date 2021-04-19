@@ -15,6 +15,12 @@ const frameChoices = [
     ["白", "米白", "原木文青"],
 ];
 
+const framePictures = [
+    ["/images/相框遮罩/相框01.png", "/images/相框遮罩/相框02.png", "/images/相框遮罩/相框03.png"],
+    ["/images/相框遮罩/圓02.png", "/images/相框遮罩/圓03.png", "/images/相框遮罩/圓04.png"],
+    ["/images/相框遮罩/橢圓01.png", "/images/相框遮罩/橢圓02.png", "/images/相框遮罩/橢圓03.png"],
+    ["/images/相框遮罩/心型01.png", "/images/相框遮罩/心型02.png", "/images/相框遮罩/心型03.png"],
+];
 let sizes = [];
 let frames = [];
 
@@ -53,6 +59,11 @@ function selected(array, selected) {
             : a.classList.add("selected");
     });
 }
+
+
+
+
+
 
 // where files are dropped + file selector is opened
 // where images are previewed
@@ -179,6 +190,7 @@ function previewAnduploadImage(image) {
     // read the image...
     var reader = new FileReader();
     reader.onload = function (e) {
+        img.style.zIndex = "4";
         img.src = e.target.result;
     };
     reader.readAsDataURL(image);

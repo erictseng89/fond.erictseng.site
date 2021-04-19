@@ -199,6 +199,7 @@ h1 {
     place-items: center;
     max-width: 42rem;
     width: 90vw;
+    padding: 2rem 0;
 }
 
 .contactContents form {
@@ -213,7 +214,7 @@ h1 {
 .contact {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 0.3rem;
     margin: 0 0.5rem;
 }
 
