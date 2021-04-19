@@ -106,6 +106,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .item img {
@@ -165,6 +166,7 @@ h1 {
 
 .infoImg img{
     /* display: block; */
+    object-fit: fill;
     max-height: 100%;
     max-width: 100%;
 }
