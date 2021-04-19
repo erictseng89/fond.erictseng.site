@@ -1,90 +1,109 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="en">
 <head>
     <!-- CSS stylesheets -->
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css">
         <link rel="stylesheet" href="CSS/關於我們.css">
-    <!-- Javascript Scripts -->
-
+    <!-- Javascript Libraries -->
+        <script src="js/libraries/jquery-3.6.0.js"></script>
     <!-- font-family: "Noto Sans TC"; -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+    <!-- metadata -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title/Icon -->
     <title>Fond Momento</title>
+    <link rel = "icon" href = "images/icon.png" type = "image/x-icon">
 </head>
 <body>
     <header>
         <div id="banner_top">
             <div id="banner_logo_box"><a href="index.html"><img id="banner_logo" src="images/logo.png" alt="LOGO: Fond Momento"></a></div>
-            <div id="banner_slogan_box"><img id="banner_slogan" src="images/header_slogan.png" alt="Slogan: Love is not onyl a sentiment, but also an art"></div>
+            <div id="banner_slogan_box"><img id="banner_slogan" src="images/header_slogan.png" alt="Slogan: Love is not only a sentiment, but also an art"></div>
         </div>
     </header>
     <nav>            
         <div id="nav_bar">            
-            <div id="nav_logo"><a href="index.html"><a href="index.html"><img src="images/logo2.png" alt="Logo"></a></div>
-            <ul>
-            <li class="nav_items"><a href="訂製拼圖.html">訂製拼圖</a></li>
-            <li class="nav_items"><a href="裱框服務.html">裱框服務</a></li>
-            <li class="nav_items"><a href="拼圖遊戲.html">拼圖遊戲</a></li>
-        </ul></div>
-        <div id="member_cart">
+            <div id="nav_logo"><img src="images/logo2.png" alt="Logo"></div>
+            <ul class="horizontalNav">
+                <li class="nav_items"><a href="訂製拼圖.html">訂製拼圖</a></li>
+                <li class="nav_items"><a href="裱框服務.html">裱框服務</a></li>
+                <li class="nav_items"><a href="拼圖遊戲.html">拼圖遊戲</a></li>
+            </ul>
+        </div>
+        <div class="member_cart horizontalNav">
             <a href="會員.html"><img class="cart_icons" src="images/icons/1x/member.png" alt="Member Login"></a>
             <a href="購物車.html"><img class="cart_icons" src="images/icons/1x/cart.png" alt="Shopping Cart"></a>
         </div>
-    </nav>
-    
-    <main>
-        <div class="div_setting">
-            <h1 class="center1 big2">關於我們</h1>
+        <div class="sideMenu">
+            <ul>
+                <li></li>
+                <li><a href="訂製拼圖.html">訂製拼圖</a></li>
+                <li><a href="裱框服務.html">裱框服務</a></li>
+                <li><a href="拼圖遊戲.html">拼圖遊戲</a></li>
+                <li class="member_cart">
+                    <a href="會員.html"><img class="cart_icons" src="images/icons/1x/member.png" alt="Member Login"></a>
+                    <a href="購物車.html"><img class="cart_icons" src="images/icons/1x/cart.png" alt="Shopping Cart"></a>
+                </li>
+            </ul>
         </div>
-        <div class="div_setting flex1">
-            <div class="div_setting2 div_setting4">
-               <img class="img" src="images/aboutus/logo800px.png"> 
+    </nav>
+    <main>
+        <div class="content">
+
+            <div class="Box">
+                <img src="images\aboutus\logo800px.png" >
             </div>
-            <div class="div_setting2 div_setting3">
-                <h1 class="big1">Momento名字由來</h1>
-                <P>
-                    <strong>Fond</strong><br>
-                    美好的、喜愛的，並有懷念過去的涵義。<br>  
-                    <strong>Memento</strong><br>
-                    紀念、紀念品<br>
-                    <br>
-                    美好的回憶印製成拼圖，成為真實的紀念。
-                </P>
+            <div class="Boxp">
+                <p>品牌名稱：Fond Momento意寓為美好紀念</p>
+                <P>讓消費者除了可直接在官網上設計想要的樣式之外，亦能夠透過線上拼圖小遊戲將結果製作成自已專屬的拼圖，讓此拼圖不只是禮物，更是記錄：銘記每一個不同凡響的日子，週年紀念，生日或是各種節日，留下當下最美好的樣子；本站提供個性化商品提供一個最好的平台，消費者所獲得將會是獨一無二的專屬化客製拼圖。</p>
             </div>
             
         </div>
-        <div class="div_setting">
-            <p class="intro">
-                本企劃書執行目標為製作客製化拼圖官網，品牌名稱：Fond Momento意寓為美好紀念，並讓消費者除了可直接在官網上設計想要的樣式之外，亦能夠透過線上拼圖小遊戲將結果製作成自已專屬的拼圖，讓此拼圖不只是禮物，更是記錄：銘記每一個不同凡響的日子，週年紀念，生日或是各種節日，留下當下最美好的樣子；本站提供個性化商品提供一個最好的平台，消費者所獲得將會是獨一無二的專屬化客製拼圖。
-            </p>
-            <p class="intro2 center1">
-                <span class="big1"><strong>聯絡資訊<br></strong></span>
-                <br>
-                <strong>官網網址</strong><br>
-                www.ooo.xxx.com<br>
-                <br>
-                <strong>電話</strong><br>
-                0800-OOO-XXX<br>
-                <br>
-                <strong>E-mail</strong><br>
-                pintoo.ooo.xxx.gmail.com
-            </p>
         </div>
-    </main>
+        <div class="content">
+            <h1>Group member</h1>
+            <div class="ph-content">
+                
+                <div class="ph-Box">
+                    <img src="images\portrait\頭像01.png" >
+                    <p>Zeng Cat</p>
+                </div>
+                <div class="ph-Box">
+                    <img src="images\portrait\頭像02.png" >
+                    <p>Huang</p>
+                </div>
+                <div class="ph-Box">
+                    <img src="images\portrait\頭像03.png" >
+                    <p>Welsh Corgi</p>
+                </div>
+                <div class="ph-Box">
+                    <img src="images\portrait\頭像04.png" >
+                    <p>Ting Cat</p>
+                </div>
+                <div class="ph-Box">
+                    <img src="images\portrait\頭像05.png" >
+                    <p>Chien Chien Cat</p>
+                </div>
+            </div>
+            
+            
 
-    <footer>
-        <div>
-            <ul id="footer_details">
-                <li class="footer_items"><a href="關於我們.html">關於我們</a></li>
-                <li class="footer_lines">|</li>
-                <li class="footer_items"><a href="聯絡資訊.html">聯絡資訊</a></li>
-            </ul>
         </div>
+        
+    </main>
+    <footer>
+        <a href="對對碰.html"><img src="Game/g52.jpg" alt="對對碰"></a>
+        <ul id="footer_details">
+            <li class="footer_items"><a href="關於我們.html">關於我們</a></li>
+            <li class="footer_lines">|</li>
+            <li class="footer_items"><a href="聯絡資訊.html">聯絡資訊</a></li>
+        </ul>
     </footer>
+    <!--k Javascript Scripts -->
+<script src="js/template.js"></script>
 </body>
 </html>

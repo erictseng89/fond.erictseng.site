@@ -1,128 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- CSS stylesheets -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="CSS/reset.css">
-        <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/index.css">
-    <!-- Javascript Libraries -->
-    <!-- font-family: "Noto Sans TC"; -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- metadata -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title/Icon -->
-    <title>Fond Momento</title>
-    <link rel = "icon" href = "images/icon.png" type = "image/x-icon">
-</head>
-<body>
-    <header>
-        <div id="banner_top">
-            <div id="banner_logo_box"><a href="index.html"><img id="banner_logo" src="images/logo.png" alt="LOGO: Fond Momento"></a></div>
-            <div id="banner_slogan_box"><img id="banner_slogan" src="images/header_slogan.png" alt="Slogan: Love is not only a sentiment, but also an art"></div>
-        </div>
-    </header>
+    <head>
+        <!-- CSS stylesheets -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="CSS/reset.css" />
+        <link rel="stylesheet" href="CSS/template.css" />
+        <link rel="stylesheet" href="CSS/index.css" />
+        <!-- Javascript Libraries -->
+        <!-- font-family: "Noto Sans TC"; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title/Icon -->
+        <title>Fond Momento</title>
+        <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <div id="banner_top">
+                <div id="banner_logo_box">
+                    <a href="index.html"
+                        ><img
+                            id="banner_logo"
+                            src="images/logo.png"
+                            alt="LOGO: Fond Momento"
+                    /></a>
+                </div>
+                <div id="banner_slogan_box">
+                    <img
+                        id="banner_slogan"
+                        src="images/header_slogan.png"
+                        alt="Slogan: Love is not only a sentiment, but also an art"
+                    />
+                </div>
+            </div>
+        </header>
 
-    <nav>            
-        <div id="nav_bar">            
-            <div id="nav_logo"><a href="index.html"><img src="images/logo2.png" alt="Logo"></a></div>
-            <ul class="horizontalNav">
-                <li class="nav_items"><a href="訂製拼圖.html">訂製拼圖</a></li>
-                <li class="nav_items"><a href="裱框服務.html">裱框服務</a></li>
-                <li class="nav_items"><a href="拼圖遊戲.html">拼圖遊戲</a></li>
-            </ul>
-        </div>
-        <div class="member_cart horizontalNav">
-            <a href="會員.html"><img class="cart_icons" src="images/icons/1x/member.png" alt="Member Login"></a>
-            <a href="購物車.html"><img class="cart_icons" src="images/icons/1x/cart.png" alt="Shopping Cart"></a>
-        </div>
-        <div class="sideMenu">
-            <ul>
-                <li></li>
-                <li><a href="訂製拼圖.html">訂製拼圖</a></li>
-                <li><a href="裱框服務.html">裱框服務</a></li>
-                <li><a href="拼圖遊戲.html">拼圖遊戲</a></li>
-                <li class="member_cart">
-                    <a href="會員.html"><img class="cart_icons" src="images/icons/1x/member.png" alt="Member Login"></a>
-                    <a href="購物車.html"><img class="cart_icons" src="images/icons/1x/cart.png" alt="Shopping Cart"></a>
-                </li>
-            </ul>
-            
-        </div>
-    </nav>
-    
-    <main>
-        <div class="slideshow">
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/slideshow/member_ss4.jpg" alt="First slide">
+        <nav>
+            <div id="nav_bar">
+                <div id="nav_logo">
+                    <a href="index.html"
+                        ><img src="images/logo2.png" alt="Logo"
+                    /></a>
+                </div>
+                <ul class="horizontalNav">
+                    <li class="nav_items">
+                        <a href="訂製拼圖.html">訂製拼圖</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="裱框服務.html">裱框服務</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="拼圖遊戲.html">拼圖遊戲</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="member_cart horizontalNav">
+                <a href="會員.html"
+                    ><img
+                        class="cart_icons"
+                        src="images/icons/1x/member.png"
+                        alt="Member Login"
+                /></a>
+                <a href="購物車.html"
+                    ><img
+                        class="cart_icons"
+                        src="images/icons/1x/cart.png"
+                        alt="Shopping Cart"
+                /></a>
+            </div>
+            <div class="sideMenu">
+                <ul>
+                    <li></li>
+                    <li><a href="訂製拼圖.html">訂製拼圖</a></li>
+                    <li><a href="裱框服務.html">裱框服務</a></li>
+                    <li><a href="拼圖遊戲.html">拼圖遊戲</a></li>
+                    <li class="member_cart">
+                        <a href="會員.html"
+                            ><img
+                                class="cart_icons"
+                                src="images/icons/1x/member.png"
+                                alt="Member Login"
+                        /></a>
+                        <a href="購物車.html"
+                            ><img
+                                class="cart_icons"
+                                src="images/icons/1x/cart.png"
+                                alt="Shopping Cart"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="slideshow">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li
+                            data-target="#carousel"
+                            data-slide-to="0"
+                            class="active"
+                        ></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                class="d-block w-100"
+                                src="images/slideshow/member_ss4.jpg"
+                                alt="First slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="images/slideshow/member_ss6.jpg"
+                                alt="Second slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="images/slideshow/member_ss7.jpg"
+                                alt="Third slide"
+                            />
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slideshow/member_ss6.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slideshow/member_ss7.jpg" alt="Third slide">
+                    <a
+                        class="carousel-control-prev"
+                        href="#carousel"
+                        role="button"
+                        data-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                        class="carousel-control-next"
+                        href="#carousel"
+                        role="button"
+                        data-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div id="showcase">
+                <div class="showcase_item">
+                    <a href="#catSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/cat_oval_相框.png"
+                            alt="貓咪相框"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">貓咪拼圖</a>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div id="showcase">
-            <div class="showcase_item">
-                    <a href="#"><img class="showcase_item_photo" src="images/首頁照片/cat_oval_相框.png" alt="貓咪相框"></a>
-                    <div class="showcase_item_name"><a href="#">貓咪拼圖</a></div>
-            </div>
-            <div class="showcase_item">
-                    <a href="#"><img class="showcase_item_photo" src="images/首頁照片/Circle_相框.png" alt="圓形相框"></a>
-                    <div class="showcase_item_name"><a href="#">圓形拼圖</a></div>
-            </div>
-            <div class="showcase_item">
-                    <a href="#"><img class="showcase_item_photo" src="images/首頁照片/heart_相框.png" alt="心型姊妹"></a>
-                    <div class="showcase_item_name"><a href="#">心型拼圖</a></div>
-            </div>
-            <div class="showcase_item">
-                    <a href="#"><img class="showcase_item_photo" src="images/首頁照片/Square_相框.png" alt="包裝"></a>
-                    <div class="showcase_item_name"><a href="#">常規拼圖</a></div>
-            </div>
-            <div class="showcase_item">
-                    <a href="#"><img class="showcase_item_photo" src="images/首頁照片/相框2.png" alt="大小多樣式"></a>
-                    <div class="showcase_item_name"><a href="裱框服務.html">裱框服務</a></div>
-            </div>
-            <div class="showcase_item">
-                    <a href="#"><img class="showcase_item_photo" src="images/首頁照片/urgent _document.png" alt="急件"></a>
+                <div class="showcase_item">
+                    <a href="#circleSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/Circle_相框.png"
+                            alt="圓形相框"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">圓形拼圖</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#heartSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/heart_相框.png"
+                            alt="心型姊妹"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">心型拼圖</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#rectangleSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/Square_相框.png"
+                            alt="包裝"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">常規拼圖</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/相框2.png"
+                            alt="大小多樣式"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="裱框服務.html">裱框服務</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/urgent _document.png"
+                            alt="急件"
+                    /></a>
                     <div class="showcase_item_name"><a href="#">急件</a></div>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <a href="對對碰.html"><img src="Game/g52.jpg" alt="對對碰"></a>
-        <ul id="footer_details">
-            <li class="footer_items"><a href="關於我們.html">關於我們</a></li>
-            <li class="footer_lines">|</li>
-            <li class="footer_items"><a href="聯絡資訊.html">聯絡資訊</a></li>
-        </ul>
-    </footer>
-    <!-- Javascript Scripts -->
-    
-<script src="js/libraries/jquery-3.6.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/template.js"></script>
-<script src="js/index.js"></script>
-</body>
+            <section class="interesting">
+                <div class="contents">
+                    <div class="item">
+                        <img src="images/icons/GifIcon.png" alt="" />
+                        <p>送禮</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icons/StarIcon.png" alt="" />
+                        <p>好玩</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icons/拼圖icon.png" alt="" />
+                        <p>拼圖</p>
+                    </div>
+                </div>
+            </section>
+            <section id="catSection">
+                <div class="information">
+                    <div class="details">
+                        <h1>【商品詳情】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: Cat-010</li>
+                            <li>適用年齡: 14歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>適用性別: 中性</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 橢圓拼圖</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>尺寸: 203mm x 305mm (片數: 220)</li>
+                        </ul>
+                    </div>
+
+                    <div class="infoImg">
+                        <img src="images/首頁照片/cat_1000.jpg" alt="Cat Oval" />
+                    </div>
+                </div>
+            </section>
+            <section id="circleSection">
+                <div class="information reverse">
+                    <div class="details">
+                        <h1>【商品詳情】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: Mucha-010</li>
+                            <li>適用年齡: 14歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>適用性別: 中性</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 圓形拼圖</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>尺寸：152mm x 152mm (片數: 70)</li>
+                        </ul>
+                    </div>
+                    <div class="infoImg">
+                        <img src="images/首頁照片/Circle_1000.jpg" alt="Cat Oval" />
+                    </div>
+                </div>
+            </section>
+            <section id="heartSection">
+                <div class="information">
+                    <div class="details">
+                        <h1>【商品詳情】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: Family-010</li>
+                            <li>適用年齡: 14歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>適用性別: 中性</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 心形拼圖</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>尺寸：203mm x 305mm</li>
+                            <li>片數: 220</li>
+                        </ul>
+                    </div>
+                    <div class="infoImg">
+                        <img
+                            src="images/首頁照片/心_1000.jpg"
+                            alt="Heart Puzzle"
+                        />
+                    </div>
+                </div>`
+            </section>
+            <section id="rectangleSection">
+                <div class="information reverse">
+ 
+                    <div class="details">
+                        <h1>【商品詳情】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: yiG-010</li>
+                            <li>適用年齡: 14歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>適用性別: 中性</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 方形拼圖</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>尺寸:</li>
+                            <li>102mm x 152mm (片數:60)</li>
+                            <li>127mm x 178mm (片數:88)</li>
+                            <li>203mm x 305mm (片數:240)</li>
+                            <li>254mm x 305mm (片數:301)</li>
+                        </ul>
+                    </div>
+                    <div class="infoImg">
+                        <img
+                            src="images/首頁照片/夜光_1000.jpg"
+                            alt="Cat Oval"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="postage">
+                <div class="interesting">
+
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <a href="對對碰.html"><img src="Game/g52.jpg" alt="對對碰" /></a>
+            <ul id="footer_details">
+                <li class="footer_items">
+                    <a href="關於我們.html">關於我們</a>
+                </li>
+                <li class="footer_lines">|</li>
+                <li class="footer_items">
+                    <a href="聯絡資訊.html">聯絡資訊</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- Javascript Scripts -->
+
+        <script src="js/libraries/jquery-3.6.0.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/template.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>

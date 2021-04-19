@@ -1,49 +1,69 @@
 main {
-    color: var(--color-brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.center1 {
-    text-align: center;
+.content {
+    /* border: 1px solid black; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 1.5rem;
+    
 }
-.flex1 {
-    Display : flex;
-    Justify-content : center;
+
+.Box {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
 }
-.big1 {
+.Box img {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+        
+}
+.Boxp {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    max-width: 40rem;
+    margin: 0 0 5rem;
+}
+.Boxp p{
     font-size: 1.5rem;
+    line-height: 2rem;
 }
-.big2 {
-    font-size: 3rem;
+
+.ph-content{
+    /* border: 1px solid black; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    flex-wrap: wrap; 
+
 }
-.div_setting {
-    margin: 0 auto;
-    width: 65%;
+
+.ph-Box {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  1.5rem;   
+
 }
-.div_setting2 {
-    margin: 0 3%;
-    background-color: var(--color-banner);
-    padding: 1%;
+.ph-Box p{
+    font-size: 1.5rem;
+    margin: 1rem;
 }
-.div_setting3 {
-    position: relative;
-    right: 5%;
-}
-.div_setting4 {
-    position: relative;
-    left: 5%;
-}
-.img {
-    width: 75%;
-}
-p {
-    padding: 1%;
-}
-.intro {
-    margin: 1% auto;
-    width: 93%;
-    background-color: var(--color-banner);
-}
-.intro2 {
-    margin: 1% auto;
-    width: 93%;
-    background-color: var(--color-banner);
+.content h1{
+    font-size: 2rem;
+    margin: 1rem;
 }
