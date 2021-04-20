@@ -25,10 +25,10 @@ const framePictures = [
 ];
 
 const sizeChoicesSpecs = [
-    ["297mm x 420mm", "203mm x 254mm", "127mm x 178mm", "102mm x 152mm"],
-    ["200mm x 200mm"],
-    ["305mm x 203mm"],
-    ["223mm x 178mm"], 
+    ["297mm x 420mm($990)", "203mm x 254mm($801)", "127mm x 178mm($730)", "102mm x 152mm ($244)"],
+    ["200mm x 200mm($670)"],
+    ["305mm x 203mm($800)"],
+    ["223mm x 178mm($750)"], 
 ]
 
 let sizes = [];
