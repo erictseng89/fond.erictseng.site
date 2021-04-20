@@ -26,21 +26,32 @@ let frames = [];
 
 shapes.forEach((a, i) => {
     a.addEventListener("click", () => {
-        document.getElementById("shapeList").innerHTML = "";
+        document.getElementById("sizeList").innerHTML = "";
         selected(shapes, a);
-        generateLi("shapeList", sizeChoices[i], sizes);
-        generateLi("frameList", frameChoices[i], frames);
+        generateLi("sizeList", sizeChoices[i], sizes, i, false);
+        generateLi("frameList", frameChoices[i], frames, i, true);
     });
 });
 
-function generateLi(ulID, dataArray, newArray) {
+function generateLi(ulID, dataArray, newArray, shapeIndex, frame) {
+    // Clears array
     newArray.length = 0;
+
+    // Removes original div
     document.getElementById(ulID).innerHTML = "";
-    dataArray.forEach((a) => {
+    dataArray.forEach((a, i) => {
         let newEl = document.createElement("li");
         newArray.push(newEl);
         newEl.innerHTML = a;
         newEl.classList.add("selectionLi");
+        if (frame) {
+            newEl.addEventListener("click", () => {
+                let newImage = framePictures[shapeIndex][i];
+                console.log(newImage);
+                let frameBox = document.getElementById("framePictureBox");
+                frameBox.style.backgroundImage = `url(${newImage})`;
+            })
+        }
         if (dataArray.length === 1) {
             selected(sizes, newEl);
         } else {
@@ -67,7 +78,7 @@ function selected(array, selected) {
 
 // where files are dropped + file selector is opened
 // where images are previewed
-let dropRegion = document.getElementById("drop-region"),
+let dropRegion = document.getElementById("image-preview"),
     previewRegion = document.getElementById("image-preview"),
     imageInserted = false;
 
@@ -196,7 +207,7 @@ function previewAnduploadImage(image) {
     reader.readAsDataURL(image);
 
     // dragfunction();
-    $("#currentImage").draggable({ containment: "#image-view" });
+    $("#currentImage").draggable({ containment: "#image-preview" });
     // $("#currentImage").draggable();
     // create FormData
     var formData = new FormData();

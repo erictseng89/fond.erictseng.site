@@ -44,7 +44,6 @@
                 </div>
             </div>
         </header>
-
         <nav>
             <div id="nav_bar">
                 <div id="nav_logo">
@@ -77,6 +76,14 @@
                         src="images/icons/1x/cart.png"
                         alt="Shopping Cart"
                 /></a>
+                <a href="index.html"
+                    ><img
+                        class="cart_icons"
+                        src="images/icons/1x/home.png"
+                        alt="Home Page"
+                        style="padding-left: 0.20em"
+                        
+                /></a>
             </div>
             <div class="sideMenu">
                 <ul>
@@ -101,7 +108,6 @@
                 </ul>
             </div>
         </nav>
-
         <main>
             <div class="slideshow">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -220,13 +226,13 @@
                     </div>
                 </div>
                 <div class="showcase_item">
-                    <a href="#postageSection"
+                    <a href="#contactSection"
                         ><img
                             class="showcase_item_photo"
                             src="images/首頁照片/urgent _document.png"
                             alt="急件"
                     /></a>
-                    <div class="showcase_item_name"><a href="#">急件</a></div>
+                    <div class="showcase_item_name"><a href="#">聯絡我們</a></div>
                 </div>
             </div>
             <section class="interesting">
@@ -348,7 +354,7 @@
                     </div>
                 </div>
             </section>
-            <section id="postageSection">                
+            <!-- <section id="postageSection">                
                 <div class="information">
                     <div class="infoImg">
                         <img
@@ -369,27 +375,35 @@
                     </div>
                 </div>
 
-            </section>            
+            </section>   -->          
             <section id="contactSection">
                 <div class="contactContents">
                     <h1>聯絡我們</h1>
-                    <form action="#contactSection">
+                    <p>
+                        電話: 04 1234 5678
+                        <br>
+                        Email: service@fondmomento.com.tw
+                        <br>
+                        或填寫以下表單，我們將在3-5天內回信。謝協您耐心等待。
+                    </p>
+                    <form action="#contactSection " class="needs-validation">
                         <div class="contact contactName">
                             <span>名字</span>
                             <input type="text" class="textinput">
                         </div>
                         <div class="contact contactNumber">
                             <span>電話</span>
-                            <input type="text" class="textinput">
+                            <input type="tel" class="textinput">
                         </div>
                         <div class="contact contactEmail">
                             <span>電子信箱</span>
-                            <input type="text" class="textinput">
+                            <input type="email" class="textinput form-control" />
                         </div>
                         <div class="contact contactMessage">
                             <span>您的訊息</span>
                             <input type="text" class="textinput">
                         </div>
+                        <button class="brownbutton">送出</button>
                     </form>
                 </div>
             </section>

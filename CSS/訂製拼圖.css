@@ -21,6 +21,7 @@ main {
 
 .selectionBox {
     height: 100%;
+    padding: 1rem;
 }
 
 .selectionBox div {
@@ -57,39 +58,91 @@ main {
     transform: scale(1.1);
 }
 
-.display {
-    /* margin: 0 2rem; */
-}
 
 #drop-region {
-    width: 600px;
+    width: 95vw;
+    max-width: 600px;
     height: 600px;
+    max-height: 95vw;
     display: grid;
     place-items: center;
+    position: relative;
     /* border: 1px solid black; */
 }
 
 #image-preview {
-    width: 75%;
-    height: 75%;
-    /* border: 1px solid black; */
+    width: 80%;
+    height: 82%;
     display: flex;
     flex-basis: 0;
-    background-color: white;
+    background-color: rgb(231, 231, 231);
 }
 
 #image-preview * {
-    max-width: 100%;
     max-height: 100%;
+    max-width: 100%;
+
 }
 
-#frameBox {
+#framePictureBox {
     z-index: 10;
     position: absolute;
-    background-image: url(/images/相框遮罩/心型01.png);
     background-size: contain;
-    width: inherit;
+    width: 100%;
     height: inherit;
     pointer-events: none;
 }
 
+.resetButton {
+    z-index: 11;
+    display: block;
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+}
+
+#cartButton {
+    z-index: 11;
+    display: block;
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    width: 2rem;
+    height: 2rem;
+}
+
+#cartButton:hover, .resetButton:hover {
+    transform: scale(1.1);
+}
+
+.hoverEvent {
+    position: absolute;
+    top: 5rem;
+}
+
+.hasTooltip {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: var(--color-brown);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 15;
+    bottom: 110%;
+    /* right: 50%; */
+    /* margin-left: -60px; */
+}
+
+.hasTooltip:hover .tooltiptext {
+    visibility: visible;
+  }

@@ -1,5 +1,21 @@
 :root {
     --wrap-showcase_pct: 33%;
+    --top-spacing: 6rem;
+
+}
+
+@media (max-height: 800px) {
+	:root {
+        --top-spacing: 1rem;
+
+	}
+}
+
+@media (max-width: 950px) {
+    :root {
+		font-size: 18px;
+        --top-spacing: 1rem;
+    }
 }
 
 @media (max-width: 750px) {
@@ -20,7 +36,6 @@ html {
     -webkit-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
     scroll-snap-type: y mandatory;
-    --top-spacing: 6rem;
     scroll-padding-top: var(--top-spacing);
 }
 
@@ -187,12 +202,6 @@ h1 {
 
 } */
 
-#contactSection {
-    display: grid;
-    place-items: center;
-    height: auto;
-    background-color: var(--color-yellow_light);
-}
 
 .contactContents {
     display: grid;
@@ -218,6 +227,20 @@ h1 {
     margin: 0 0.5rem;
 }
 
+.contactContents p {
+    justify-self: flex-start;
+    margin: 1rem 0.7rem;
+    font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+#contactSection {
+    display: grid;
+    align-items: center;
+    height: auto;
+    background-color: var(--color-yellow_light);
+}
+
 form span {
     padding: 0.5rem;
 }
@@ -234,3 +257,9 @@ form span {
 .contactMessage input {
     height: 15vh;
 }
+
+form button {
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+}
+

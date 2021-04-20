@@ -112,28 +112,33 @@
                     <hr />
                     <div class="sizeBox">
                         <h1>大小</h1>
-                        <ul id="shapeList"></ul>
+                        <ul id="sizeList"></ul>
                     </div>
                     <hr />
                     <div class="frameBox">
                         <h1>框</h1>
-                        <ul id="frameList">
-                        </ul>
+                        <ul id="frameList"></ul>
                     </div>
                 </div>
                 <div class="display">
                     <div id="drop-region">
-                        <div id="frameBox">
-                            
-                        </div>
+                        <div id="framePictureBox"></div>
                         <div id="image-preview" class="border"></div>
+                        <input
+                            id="reset"
+                            type="button"
+                            class="resetButton brownbutton"
+                            value="移除圖片"
+                            onclick="reset()"
+                        />
+                        <div id="cartButton">
+                            <div id="cartContain" class="hasTooltip">
+                                <span class="tooltiptext">加入購物車</span>
+                                <a href="購物車.html"><img src="images/icons/1x/cart.png" alt="Add to cart"></a>
+                            </div>
+
+                        </div>
                     </div>
-                    <input
-                        id="reset"
-                        type="button"
-                        value="reset"
-                        onclick="reset()"
-                    />
                 </div>
             </div>
         </main>

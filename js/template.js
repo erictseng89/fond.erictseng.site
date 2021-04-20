@@ -25,11 +25,11 @@ let logoFunc = function() {
  
 };
 
-function sideMenuToggle() {
+/* function sideMenuToggle() {
   let sm = $(".sideMenu");
     sm.toggle(400);
     sm.css("display","flex");
-}
+} */
 
 // $('#nav_logo').bind('click', sideMenuToggle);
-window.addEventListener("scroll", logoFunc);
+// window.addEventListener("scroll", logoFunc);
