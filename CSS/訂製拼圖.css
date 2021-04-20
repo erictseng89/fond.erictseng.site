@@ -72,16 +72,18 @@ main {
 
 #image-preview {
     width: 80%;
-    max-width: 80%;
+    max-width: inherit;
     height: 82%;
-    max-height: 82%;
+    max-height: inherit;
     display: flex;
     flex-basis: 0;
     background-color: rgb(231, 231, 231);
 }
 
 #image-preview * {
-    max-width: inherit;
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 #framePictureBox {
@@ -90,6 +92,16 @@ main {
     background-size: contain;
     width: 100%;
     height: inherit;
+    pointer-events: none;
+}
+
+#frameWireBox {
+    z-index: 9;
+    position: absolute;
+    background-image: url('/images/相框遮罩/wireframe.png');
+    background-size: contain;
+    width: 85%;
+    height: 85%;
     pointer-events: none;
 }
 

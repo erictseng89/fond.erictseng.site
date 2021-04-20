@@ -1,3 +1,5 @@
+
+
 let shapes = document.getElementsByName("shapes");
 console.log(shapes);
 
@@ -253,3 +255,7 @@ function reset() {
         document.querySelector("#image-view").remove();
     }
 }
+
+$(document).ready( () => {
+    selected(shapes, 0)
+})
