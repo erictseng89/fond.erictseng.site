@@ -106,7 +106,52 @@
             </div>
         </nav>
         <main>
-
+            <main>
+                <div class="contents">
+                    <div class="selectionBox">
+                        <div class="shapeBox">
+                            <h1>形狀</h1>
+                            <ul>
+                                <li name="shapes">方形</li>
+                                <li name="shapes">圓形</li>
+                                <li name="shapes">橢圓形</li>
+                                <li name="shapes">心型</li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <div class="sizeBox">
+                            <h1>大小</h1>
+                            <ul id="sizeList"></ul>
+                        </div>
+                        <hr />
+                        <div class="frameBox">
+                            <h1>框</h1>
+                            <ul id="frameList"></ul>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <div id="drop-region">
+                            <div id="framePictureBox"></div>
+                            <div id="frameWireBox"></div>
+                            <div id="image-preview" class="border"></div>
+                            <input
+                                id="reset"
+                                type="button"
+                                class="resetButton brownbutton"
+                                value="移除圖片"
+                                onclick="reset()"
+                            />
+                            <div id="cartButton">
+                                <div id="cartContain" class="hasTooltip">
+                                    <span class="tooltiptext">加入購物車</span>
+                                    <a href="購物車.html"><img src="images/icons/1x/cart.png" alt="Add to cart"></a>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </main>
         <footer>
             <div class="footerLeft">
