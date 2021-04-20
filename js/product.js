@@ -60,13 +60,16 @@ function generateLi(ulID, dataArray, newArray, shapeIndex, frame) {
                 console.log(newImage);
                 let frameBox = document.getElementById("framePictureBox");
                 frameBox.style.backgroundImage = `url(${newImage})`;
+                frameBox.style.backgroundSize = `contain`;
             })
-        } /* else {
+        } else {
             let tooltipSpan = document.createElement("span");
-            tooltipSpan.classList.add(tooltiptext);
+            tooltipSpan.classList.add("tooltiptext");
             tooltipSpan.innerText = sizeChoicesSpecs[shapeIndex][i]
-            a.appendChild(tooltipSpan);
-        } */
+            // console.log(newEl);
+            newEl.classList.add("hasTooltip");
+            newEl.appendChild(tooltipSpan);
+        }
         if (dataArray.length === 1) {
             selected(sizes, newEl);
         } else {
@@ -76,7 +79,6 @@ function generateLi(ulID, dataArray, newArray, shapeIndex, frame) {
         }
         document.getElementById(ulID).append(newEl);
     });
-
 }
 
 function selected(array, selected) {
@@ -86,11 +88,6 @@ function selected(array, selected) {
             : a.classList.add("selected");
     });
 }
-
-
-
-
-
 
 // where files are dropped + file selector is opened
 // where images are previewed

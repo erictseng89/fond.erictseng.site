@@ -53,6 +53,10 @@ main {
     margin-left: 2rem;
 }
 
+.itemBox li {
+    line-height: 1.5rem;
+}
+
 .cartBox {
     justify-self: end;
     align-self: flex-end;
