@@ -96,7 +96,7 @@ form span {
 	text-align: right;
 }
 
-form input[type="text"] {
+:is(form) input[type="text"], input[type="email"], input[type="password"] {
 	text-align: left;
 	max-width: 12rem;
     background-color: rgb(245, 245, 245);

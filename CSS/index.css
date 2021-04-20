@@ -204,8 +204,10 @@ h1 {
 
 
 .contactContents {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     max-width: 42rem;
     width: 90vw;
     padding: 2rem 0;
@@ -228,10 +230,12 @@ h1 {
 }
 
 .contactContents p {
-    justify-self: flex-start;
-    margin: 1rem 0.7rem;
+    align-self: flex-start;
+    margin: 2rem 0.7rem;
     font-size: 1.2rem;
 	line-height: 2rem;
+    max-width: 80%;
+
 }
 
 #contactSection {

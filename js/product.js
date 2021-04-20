@@ -185,11 +185,15 @@ function previewAnduploadImage(image) {
     // container
     var imgView = document.createElement("div");
     imgView.id = "image-view";
+    // imgView.objectFit = "contain";
+    // imgView.style.maxHeight = "200px"
     previewRegion.appendChild(imgView);
 
     // previewing image
     var img = document.createElement("img");
     img.id = "currentImage";
+    // imgView.style.maxHeight = "inherit"
+
     imgView.appendChild(img);
 
     // progress overlay

@@ -72,16 +72,16 @@ main {
 
 #image-preview {
     width: 80%;
+    max-width: 80%;
     height: 82%;
+    max-height: 82%;
     display: flex;
     flex-basis: 0;
     background-color: rgb(231, 231, 231);
 }
 
 #image-preview * {
-    max-height: 100%;
-    max-width: 100%;
-
+    max-width: inherit;
 }
 
 #framePictureBox {
