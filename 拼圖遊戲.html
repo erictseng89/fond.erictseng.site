@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- CSS stylesheets -->
-        <link rel="stylesheet" href="CSS/reset.css">
-        <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/拼圖遊戲.css">
-    <!-- Javascript Libraries -->
-        <script src="js/libraries/jquery-3.6.0.js"></script>
-    <!-- font-family: "Noto Sans TC"; -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- metadata -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title/Icon -->
-    <title>Fond Momento</title>
-    <link rel = "icon" href = "images/icon.png" type = "image/x-icon">
-</head>
-<body>
+    <head>
+        <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="CSS/reset.css" />
+        <link rel="stylesheet" href="CSS/template.css" />
+        <link rel="stylesheet" href="CSS/訂製拼圖.css" />
+        <!-- Javascript Libraries -->
+
+        <!-- font-family: "Noto Sans TC"; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title/Icon -->
+        <title>Fond Momento</title>
+        <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    </head>
+<body translate="no">
     <header>
         <div id="banner_top">
             <div id="banner_logo_box">
@@ -50,7 +53,7 @@
                     <a href="訂製拼圖.html">訂製拼圖</a>
                 </li>
                 <li class="nav_items">
-                    <a href="裱框服務.html">產品介紹</a>
+                    <a href="裱框服務.html">裱框服務</a>
                 </li>
                 <li class="nav_items">
                     <a href="拼圖遊戲.html">拼圖遊戲</a>
@@ -83,7 +86,7 @@
             <ul>
                 <li></li>
                 <li><a href="訂製拼圖.html">訂製拼圖</a></li>
-                <li><a href="裱框服務.html">產品介紹</a></li>
+                <li><a href="裱框服務.html">裱框服務</a></li>
                 <li><a href="拼圖遊戲.html">拼圖遊戲</a></li>
                 <li class="member_cart">
                     <a href="會員.html"
@@ -103,9 +106,51 @@
         </div>
     </nav>
     <main>
-        
-
-        
+        <div id="gameBox">
+            <img class="margin1 size1" src="images/pintoo_game/pintoo1/0.jfif">
+            <div class="table margin1 size1">
+                <!-- 拼圖底座 -->
+                <div class="table_row">
+                    <div class="table_cell" id="Q1" data-ans="6"></div>
+                    <div class="table_cell" id="Q2" data-ans="5"></div>
+                    <div class="table_cell" id="Q3" data-ans="4"></div>
+                </div>
+                <div class="table_row">
+                    <div class="table_cell" id="Q4" data-ans="3"></div>
+                    <div class="table_cell" id="Q5" data-ans="2"></div>
+                    <div class="table_cell" id="Q6" data-ans="1"></div>
+                </div>
+                <!-- 拼圖圖片 -->
+                <div class="ans ui-widget-content" id="ans01" data-ans="1">
+                    <img id="pic01" src="images/pintoo_game/pintoo2/01.png">
+                    <span></span>
+                </div>
+                <div class="ans ui-widget-content" id="ans02" data-ans="2">
+                    <img id="pic02" src="images/pintoo_game/pintoo2/02.png">
+                    <span></span>
+                </div>
+                <div class="ans ui-widget-content" id="ans03" data-ans="3">
+                    <img id="pic03" src="images/pintoo_game/pintoo2/03.png">
+                    <span></span>
+                </div>
+                <div class="ans ui-widget-content" id="ans04" data-ans="4">
+                    <img id="pic04" src="images/pintoo_game/pintoo2/04.png">
+                    <span></span>
+                </div>
+                <div class="ans ui-widget-content" id="ans05" data-ans="5">
+                    <img id="pic05" src="images/pintoo_game/pintoo2/05.png">
+                    <span></span>
+                </div>
+                <div class="ans ui-widget-content" id="ans06" data-ans="6">
+                    <img id="pic06" src="images/pintoo_game/pintoo2/06.png">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div id='finished'>
+            <srong>* 拼圖完成 *</srong>
+            <button id="restart" type="button">重新開始</button>
+        </div>                
     </main>
     <footer>
         <div class="footerLeft">
@@ -124,6 +169,11 @@
         </ul>
     </footer>
     <!--k Javascript Scripts -->
-<script src="js/template.js"></script>
+    <script src="js/template.js"></script>
+    <!-- game js -->
+    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script>
+    <script src="js/pintoo_game.js"></script>
 </body>
 </html>

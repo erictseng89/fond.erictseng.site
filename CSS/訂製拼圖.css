@@ -10,6 +10,7 @@ main {
     padding: 3rem; */
     margin-top: 1rem;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -72,16 +73,16 @@ main {
 
 #image-preview {
     width: 80%;
-    max-width: inherit;
+    max-width: 80%;
     height: 82%;
-    max-height: inherit;
+    max-height: 82%;
     display: flex;
     flex-basis: 0;
     background-color: rgb(231, 231, 231);
 }
 
 #image-preview * {
-    object-fit: cover;
+    object-fit: contain;
     max-height: 100%;
     max-width: 100%;
 }

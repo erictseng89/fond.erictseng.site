@@ -100,10 +100,9 @@ h1 {
 
 .details {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1fr 3.5fr;
 	grid-gap: 1rem;
 	width: auto;
-
 }
 
 .details h1:first-of-type {
@@ -112,11 +111,38 @@ h1 {
 
 .details span {
 	text-align: right;
+    text-justify: center;
 }
 
 .details input {
     text-align: left;
 }
+
+#addressTag {
+    grid-row: 4 / 6;
+    align-self: center;
+}
+
+#twzipcode {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zipBox * {
+    width: 3rem;
+    height: 1.2rem;
+
+}
+
+#twzipcode div {
+    padding: 0 0.15rem;
+    height: 1rem;
+}
+
+:is(#twzipcode) select {
+    height: 1.5rem;
+}
+
 
 #receipt {
 	/* width: 100%; */

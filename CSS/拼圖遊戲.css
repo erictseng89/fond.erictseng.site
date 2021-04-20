@@ -1,0 +1,134 @@
+.table {
+    position: relative;
+    margin: auto;
+    display: table;
+    width:600px; /* 這裡有bug，沒設定高度，可能導致放入不同大小照片有問題 */
+    background-color: var(--color-banner);
+    border: 5px solid var(--color-brown);
+}
+.table_row {
+    display:table-row;
+}
+.table_cell {
+    display:table-cell;
+    width: 200px;
+    height: 200px;
+}
+.ans {
+    /* div 寬高 */
+    width:200px;
+    height:200px;
+    position:absolute;
+    cursor: pointer;
+}
+.ans>span {
+    position: absolute;
+    font-size: 50px;
+}
+/* 以下是我修正的部分，上面是老師的部分 */
+/* 拼圖圖檔設定 */
+#pic01 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#pic02 {
+    position: absolute;
+    left: -2px;
+    top: -4px;
+}
+#pic03 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#pic04 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#pic05 {
+    position: absolute;
+    left: -59px;
+    top: 0;
+}
+#pic06 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.size1 {
+    width: 600px;
+}
+.margin1 {
+    margin: 1% auto;
+}
+#gameBox {
+    margin: 0 auto;
+    width: 80%;
+    height: 800px;
+    /* gameBox底下的東西垂直置中 */
+    display : flex;
+    justify-content: space-around;
+    align-items : center;
+    flex-wrap: wrap;
+}
+
+/* MEDIA QUERY 只設定手機，電腦沿用上面的配置即可 */
+
+@media (max-width: 576px) {
+    /* main {
+        測試用，記得刪掉
+        background-color: brown;
+    } */
+    .size1 {
+        width: 90vw;
+        height: 60vw; /* 這裡有bug，可能導致放入不同大小照片有問題 */
+    }
+    #gameBox {
+        width: 90vw;
+    }
+    .table_cell {
+        width: 33.33%;
+        height: 50%;
+        /* border: 1px solid green; */
+    }
+    .ans {
+        /* div 寬高 */
+        width: 30vw;
+        height: 30vw;
+        position:absolute;
+        cursor: pointer;
+        /* 圖片 寬高 */
+        background-size: 30vw 30vw;
+    }
+}
+#finished {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
+    background-color: var(--color-banner);
+
+    border: solid 0.2rem var(--color-brown);
+
+    /* flex設定 */
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items : center;
+
+    /* 文字設定 */
+    font-size: 5rem;
+
+    /* 隱藏或顯示 */
+    visibility: hidden;
+}
+#restart {
+    font-size: 5rem;
+    color: var(--color-brown);
+    border-radius: 1.5rem;
+}

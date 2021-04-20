@@ -198,14 +198,19 @@ function previewAnduploadImage(image) {
     // container
     var imgView = document.createElement("div");
     imgView.id = "image-view";
-    // imgView.objectFit = "contain";
+    imgView.objectFit = "contain";
+    imgView.style.height= "inherit";
+    imgView.style.width= "100%";
     // imgView.style.maxHeight = "200px"
     previewRegion.appendChild(imgView);
 
     // previewing image
     var img = document.createElement("img");
     img.id = "currentImage";
-    // imgView.style.maxHeight = "inherit"
+    img.style.display = "block";
+
+    // img.style.maxWidth = "100%"
+    // img.style.height = "auto";
 
     imgView.appendChild(img);
 

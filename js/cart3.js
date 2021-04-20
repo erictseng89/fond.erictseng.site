@@ -14,3 +14,4 @@ function enableReceipt() {
 
 $('input[name=receipt]').bind("click", enableReceipt);
 
+$('#twzipcode').twzipcode();
