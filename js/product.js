@@ -1,13 +1,13 @@
 
 
 let shapes = document.getElementsByName("shapes");
-console.log(shapes);
+// console.log(shapes);
 
 const sizeChoices = [
     ["特大", "大", "中", "小"],
     ["小"],
     ["直向"],
-    ["大", "小"],
+    ["小"],
 ];
 
 const frameChoices = [
@@ -23,6 +23,14 @@ const framePictures = [
     ["/images/相框遮罩/橢圓01.png", "/images/相框遮罩/橢圓02.png", "/images/相框遮罩/橢圓03.png"],
     ["/images/相框遮罩/心型01.png", "/images/相框遮罩/心型02.png", "/images/相框遮罩/心型03.png"],
 ];
+
+const sizeChoicesSpecs = [
+    ["297mm x 420mm", "203mm x 254mm", "127mm x 178mm", "102mm x 152mm"],
+    ["200mm x 200mm"],
+    ["305mm x 203mm"],
+    ["223mm x 178mm"], 
+]
+
 let sizes = [];
 let frames = [];
 
@@ -53,7 +61,12 @@ function generateLi(ulID, dataArray, newArray, shapeIndex, frame) {
                 let frameBox = document.getElementById("framePictureBox");
                 frameBox.style.backgroundImage = `url(${newImage})`;
             })
-        }
+        } /* else {
+            let tooltipSpan = document.createElement("span");
+            tooltipSpan.classList.add(tooltiptext);
+            tooltipSpan.innerText = sizeChoicesSpecs[shapeIndex][i]
+            a.appendChild(tooltipSpan);
+        } */
         if (dataArray.length === 1) {
             selected(sizes, newEl);
         } else {
@@ -63,6 +76,7 @@ function generateLi(ulID, dataArray, newArray, shapeIndex, frame) {
         }
         document.getElementById(ulID).append(newEl);
     });
+
 }
 
 function selected(array, selected) {
@@ -113,7 +127,7 @@ dropRegion.addEventListener("drop", preventDefault, false);
 
 function handleDrop(e) {
     if (!imageInserted) {
-        console.log(imageInserted);
+        // console.log(imageInserted);
 
         var dt = e.dataTransfer,
             files = dt.files;
@@ -257,5 +271,13 @@ function reset() {
 }
 
 $(document).ready( () => {
-    selected(shapes, 0)
+    selected(shapes, shapes[0])
+    generateLi("sizeList", sizeChoices[0], sizes, 0, false);
+    generateLi("frameList", frameChoices[0], frames, 0, true);
+    selected(sizes, sizes[0]);
+    selected(frames, frames[0]);
+
+    let newImage = framePictures[0][0];
+    let frameBox = document.getElementById("framePictureBox");
+    frameBox.style.backgroundImage = `url(${newImage})`;
 })
