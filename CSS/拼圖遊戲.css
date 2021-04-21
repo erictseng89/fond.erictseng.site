@@ -6,6 +6,7 @@
     background-color: var(--color-banner);
     border: 5px solid var(--color-brown);
 }
+
 .table_row {
     display:table-row;
 }
