@@ -13,11 +13,13 @@ main {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    z-index: 16;
 }
 
 .contents > * {
     border: 1px solid black;
     margin: 1rem;
+    z-index: inherit;
 }
 
 .selectionBox {
@@ -74,17 +76,22 @@ main {
 #image-preview {
     width: 80%;
     max-width: 80%;
-    height: 82%;
-    max-height: 82%;
+    height: 85%;
+    max-height: 85%;
     display: flex;
     flex-basis: 0;
     background-color: rgb(231, 231, 231);
 }
 
 #image-preview * {
-    object-fit: contain;
+    /* object-fit: cover; */
+    display: block;
     max-height: 100%;
     max-width: 100%;
+    /* width: 80%;
+    max-width: 80%;
+    height: 85%;
+    max-height: 85%; */
 }
 
 #framePictureBox {
@@ -99,7 +106,7 @@ main {
 #frameWireBox {
     z-index: 9;
     position: absolute;
-    background-image: url('/images/相框遮罩/wireframe.png');
+    background-image: url(../images/wireframe.png);
     background-size: contain;
     width: 85%;
     height: 85%;
@@ -150,7 +157,6 @@ main {
 
     /* Position the tooltip */
     position: absolute;
-    z-index: 15;
     bottom: 110%;
     /* right: 50%; */
     /* margin-left: -60px; */
@@ -158,4 +164,4 @@ main {
 
 .hasTooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}

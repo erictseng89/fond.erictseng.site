@@ -18,10 +18,10 @@ const frameChoices = [
 ];
 
 const framePictures = [
-    ["/images/相框遮罩/相框01.png", "/images/相框遮罩/相框02.png", "/images/相框遮罩/相框03.png"],
-    ["/images/相框遮罩/圓02.png", "/images/相框遮罩/圓03.png", "/images/相框遮罩/圓04.png"],
-    ["/images/相框遮罩/橢圓01.png", "/images/相框遮罩/橢圓02.png", "/images/相框遮罩/橢圓03.png"],
-    ["/images/相框遮罩/心型01.png", "/images/相框遮罩/心型02.png", "/images/相框遮罩/心型03.png"],
+    ["./images/相框遮罩/相框01.png", "./images/相框遮罩/相框02.png", "./images/相框遮罩/相框03.png"],
+    ["./images/相框遮罩/圓02.png", "./images/相框遮罩/圓03.png", "./images/相框遮罩/圓04.png"],
+    ["./images/相框遮罩/橢圓01.png", "./images/相框遮罩/橢圓02.png", "./images/相框遮罩/橢圓03.png"],
+    ["./images/相框遮罩/心型01.png", "./images/相框遮罩/心型02.png", "./images/相框遮罩/心型03.png"],
 ];
 
 const sizeChoicesSpecs = [
@@ -62,14 +62,14 @@ function generateLi(ulID, dataArray, newArray, shapeIndex, frame) {
                 frameBox.style.backgroundImage = `url(${newImage})`;
                 frameBox.style.backgroundSize = `contain`;
             })
-        } else {
+        } /* else {
             let tooltipSpan = document.createElement("span");
             tooltipSpan.classList.add("tooltiptext");
             tooltipSpan.innerText = sizeChoicesSpecs[shapeIndex][i]
             // console.log(newEl);
             newEl.classList.add("hasTooltip");
             newEl.appendChild(tooltipSpan);
-        }
+        } */
         if (dataArray.length === 1) {
             selected(sizes, newEl);
         } else {
