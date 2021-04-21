@@ -199,7 +199,7 @@ function previewAnduploadImage(image) {
     var imgView = document.createElement("div");
     imgView.id = "image-view";
     imgView.objectFit = "contain";
-    imgView.style.height= "inherit";
+    imgView.style.height= "100%";
     imgView.style.width= "100%";
     // imgView.style.maxHeight = "200px"
     previewRegion.appendChild(imgView);
@@ -207,8 +207,8 @@ function previewAnduploadImage(image) {
     // previewing image
     var img = document.createElement("img");
     img.id = "currentImage";
-    img.style.display = "block";
-
+    img.style.objectFit = "cover";
+    // img.style.display = "block";
     // img.style.maxWidth = "100%"
     // img.style.height = "auto";
 
@@ -230,6 +230,7 @@ function previewAnduploadImage(image) {
 
     // dragfunction();
     $("#currentImage").draggable({ containment: "#image-preview" });
+
     // $("#currentImage").draggable();
     // create FormData
     var formData = new FormData();
