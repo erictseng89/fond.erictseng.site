@@ -16,7 +16,7 @@ main {
 	width: 90vw;
 }
 
-h1 {
+main h1 {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 1rem 0;
@@ -199,7 +199,7 @@ h1 {
     text-align: right;
 }
 
-.total p:last-of-type, span:last-of-type {
+.total p:last-of-type, main span:last-of-type {
     font-size: 1.5rem;
 }
 

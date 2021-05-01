@@ -112,7 +112,7 @@ body {
 	background: linear-gradient(var(--color-backgroundtint), var(--color-backgroundtint)), url(../images/backimage.png);
 	font-family: "Noto Sans TC";
 	color: var(--color-brown);
-	/* min-height: 100vh; */
+	box-sizing: border-box;
 }
 
 
@@ -139,6 +139,7 @@ body {
     color: white;
     border: 0px solid white;
     border-radius: 5px;
+	padding: 0.25rem 0.5rem;
     font-size: 1rem;
 }
 
@@ -311,7 +312,8 @@ nav {
 
 
 main {
-	min-height: 97vh;
+	/* min-height: 97vh; */
+	min-height: calc(100vh - 11.5rem);
 	margin-top: var(--margin-headerspace) !important;
 }
 
@@ -328,6 +330,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 }
+
 
 footer a {
 	display: block;
