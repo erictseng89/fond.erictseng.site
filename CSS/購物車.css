@@ -163,7 +163,7 @@ h1 {
 	grid-area: number;
 }
 .itemNumberBox input {
-	width: 1.2rem;
+	width: 1.5rem;
 	margin: 0 0.1rem;
 }
 .itemNumberBox input[name=itemNumber] {
