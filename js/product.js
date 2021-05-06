@@ -174,10 +174,13 @@ function handleFiles(files) {
     // for (var i = 0, len = files.length; i < len; i++) {
     //     if (validateImage(files[i])) previewAnduploadImage(files[i]);
     // }
-    if (validateImage(files[0])) previewAnduploadImage(files[0]);
+    if (!imageInserted) {
+        if (validateImage(files[0])) previewAnduploadImage(files[0]);
+    }
 }
 
 function validateImage(image) {
+
     // check the type
     var validTypes = ["image/jpeg", "image/png", "image/gif"];
     if (validTypes.indexOf(image.type) === -1) {
@@ -229,7 +232,10 @@ function previewAnduploadImage(image) {
     reader.readAsDataURL(image);
 
     // dragfunction();
-    $("#currentImage").draggable({ containment: "#image-preview" });
+    $("#currentImage").draggable({ 
+        containment: "#image-preview",
+        cursor: 'pointer'
+    });
 
     // $("#currentImage").draggable();
     // create FormData

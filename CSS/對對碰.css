@@ -1,6 +1,6 @@
 main {
     font-family: "DFKai-sb";
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -9,6 +9,7 @@ main {
 }
 
 h1{
+    margin: 1rem 0 0.5rem;
 	font-size: 1.5rem;
 	color: var(--color-brown);
     text-align: center;
@@ -17,9 +18,11 @@ h1{
 p{
     /* width:  90vh; */
     color: var(--color-brown);
-    max-width: 400px;
+    width: 95vw;
+    max-width: 600px;
     text-align: center;
     padding: 2vw;
+    line-height: 1.6rem;
 }
 form {
 	margin-bottom: 1rem;
@@ -47,9 +50,11 @@ form {
 }
 
 input[type="text"] {
-    width: 50px;
+    width: 4rem;
+    font-size: 1rem;
 }
 
-#controlForm button {
+button {
     margin: 0 3vw;
+    padding: 0.5rem 1rem;
 }

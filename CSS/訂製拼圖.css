@@ -5,6 +5,7 @@ main {
     /* justify-content: center; */
 }
 
+
 .contents {
     /* background-color: white;
     padding: 3rem; */
@@ -71,18 +72,18 @@ main {
 
 
 #drop-region {
-    width: 95vw;
+    width: 93vw;
     max-width: 600px;
     height: 600px;
-    max-height: 95vw;
+    max-height: 93vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: grid;
-    place-items: center; */
     position: relative;
-    /* border: 1px solid black; */
+    overflow-x: hidden;
 }
+
+
 
 #image-preview {
     width: 80%;
@@ -130,6 +131,7 @@ main {
     position: absolute;
     left: 3%;
     bottom: 3%;
+    padding: 0.2rem 0.4rem;
 }
 
 #cartButton {
@@ -138,12 +140,16 @@ main {
     position: absolute;
     right: 3%;
     bottom: 3%;
-    width: 2rem;
-    height: 2rem;
+    height: auto;
 }
 
 #cartButton:hover, .resetButton:hover {
     transform: scale(1.1);
+}
+
+#cartButton img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hoverEvent {
@@ -165,12 +171,9 @@ main {
     text-align: center;
     border-radius: 5px;
     padding: 0.2rem 0.4rem;
-
-    /* Position the tooltip */
     position: absolute;
     bottom: 110%;
-    /* right: 50%; */
-    /* margin-left: -60px; */
+
 }
 
 .hasTooltip:hover .tooltiptext {

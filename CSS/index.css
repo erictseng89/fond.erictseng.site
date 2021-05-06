@@ -1,6 +1,6 @@
 :root {
     --wrap-showcase_pct: 33%;
-    --top-spacing: 7rem;
+    --top-spacing: 9.5rem;
 
 }
 
@@ -13,7 +13,6 @@
 
 @media (max-width: 950px) {
     :root {
-		font-size: 18px;
         --top-spacing: 1rem;
     }
 }
@@ -204,6 +203,15 @@ h1 {
 } */
 
 
+#contactSection {
+    /* display: grid;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--color-yellow_light);
+}
+
 .contactContents {
     display: flex;
     flex-direction: column;
@@ -221,6 +229,7 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     height: auto;
+    width: 100%;
 }
 
 .contact {
@@ -239,27 +248,26 @@ h1 {
 
 }
 
-#contactSection {
-    display: grid;
-    align-items: center;
-    height: auto;
-    background-color: var(--color-yellow_light);
-}
 
 form span {
     padding: 0.5rem;
 }
 
-.contactName, .contactNumber, .contactEmail {
+.formupper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    width: 100%;
+}
+/* .contactName, .contactNumber, .contactEmail {
     width: 90vw;
     max-width: 250px;
-}
+} */
 
 .contactMessage{
     width: 100%;
 }
 
-.contactMessage input {
+:is(.contactMessage) input, textarea {
     height: 15vh;
 }
 

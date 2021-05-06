@@ -2,11 +2,8 @@
 <html lang="en">
     <head>
         <!-- CSS stylesheets -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="CSS/reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css" />
         <link rel="stylesheet" href="CSS/index.css" />
         <!-- Javascript Libraries -->
@@ -377,21 +374,25 @@
                         或填寫以下表單，我們將在3-5天內回信。謝協您耐心等待。
                     </p>
                     <form action="#contactSection " class="needs-validation">
-                        <div class="contact contactName">
-                            <span>名字</span>
-                            <input type="text" class="textinput">
+                        <div class="formupper">
+                            <div class="contact contactName">
+                                <span>名字</span>
+                                <input type="text" class="textinput">
+                            </div>
+                            <div class="contact contactNumber">
+                                <span>電話</span>
+                                <input type="tel" class="textinput">
+                            </div>
+                            <div class="contact contactEmail">
+                                <span>電子信箱</span>
+                                <input type="email" class="textinput form-control" />
+                            </div>
                         </div>
-                        <div class="contact contactNumber">
-                            <span>電話</span>
-                            <input type="tel" class="textinput">
-                        </div>
-                        <div class="contact contactEmail">
-                            <span>電子信箱</span>
-                            <input type="email" class="textinput form-control" />
-                        </div>
+
                         <div class="contact contactMessage">
                             <span>您的訊息</span>
-                            <input type="text" class="textinput">
+                            <textarea class="textinput"></textarea>
+                            <!-- <input type="text" class="textinput"> -->
                         </div>
                         <button class="brownbutton">送出</button>
                     </form>
