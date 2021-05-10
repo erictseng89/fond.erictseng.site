@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/template.css" />
+        <link rel="stylesheet" href="CSS/index.css" />
+        <!-- Javascript Libraries -->
+        <!-- font-family: "Noto Sans TC"; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title/Icon -->
+        <title>Fond Momento</title>
+        <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <div id="banner_top">
+                <div id="banner_logo_box">
+                    <a href="index.php"
+                        ><img
+                            id="banner_logo"
+                            src="images/logo.png"
+                            alt="LOGO: Fond Momento"
+                    /></a>
+                </div>
+                <div id="banner_slogan_box">
+                    <img
+                        id="banner_slogan"
+                        src="images/header_slogan.png"
+                        alt="Slogan: Love is not only a sentiment, but also an art"
+                    />
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div id="nav_bar">
+                <div id="nav_logo">
+                    <a href="index.php"
+                        ><img src="images/logo2.png" alt="Logo"
+                    /></a>
+                </div>
+                <ul class="horizontalNav">
+                    <li class="nav_items">
+                        <a href="訂製拼圖.php">訂製拼圖</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="裱框服務.php">產品介紹</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="拼圖遊戲.php">拼圖遊戲</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="member_cart horizontalNav">
+                <a href="會員.php"
+                    ><img
+                        class="cart_icons"
+                        src="images/icons/1x/member.png"
+                        alt="Member Login"
+                /></a>
+                <a href="購物車.php"
+                    ><img
+                        class="cart_icons"
+                        src="images/icons/1x/cart.png"
+                        alt="Shopping Cart"
+                /></a>
+                <a href="index.php"
+                    ><img
+                        class="cart_icons"
+                        src="images/icons/1x/home.png"
+                        alt="Home Page"
+                        style="padding-left: 0.20em"
+                        
+                /></a>
+            </div>
+            <div class="sideMenu">
+                <ul>
+                    <li></li>
+                    <li><a href="訂製拼圖.php">訂製拼圖</a></li>
+                    <li><a href="裱框服務.php">產品介紹</a></li>
+                    <li><a href="拼圖遊戲.php">拼圖遊戲</a></li>
+                    <li class="member_cart">
+                        <a href="會員.php"
+                            ><img
+                                class="cart_icons"
+                                src="images/icons/1x/member.png"
+                                alt="Member Login"
+                        /></a>
+                        <a href="購物車.php"
+                            ><img
+                                class="cart_icons"
+                                src="images/icons/1x/cart.png"
+                                alt="Shopping Cart"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="slideshow">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li
+                            data-target="#carousel"
+                            data-slide-to="0"
+                            class="active"
+                        ></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                class="d-block w-100"
+                                src="images/slideshow/member_ss4.jpg"
+                                alt="First slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="images/slideshow/member_ss6.jpg"
+                                alt="Second slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="images/slideshow/member_ss7.jpg"
+                                alt="Third slide"
+                            />
+                        </div>
+                    </div>
+                    <a
+                        class="carousel-control-prev"
+                        href="#carousel"
+                        role="button"
+                        data-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                        class="carousel-control-next"
+                        href="#carousel"
+                        role="button"
+                        data-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div id="showcase">
+                <div class="showcase_item">
+                    <a href="#catSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/cat_oval_相框.png"
+                            alt="貓咪相框"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">橢圓形拼圖</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#circleSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/Circle_相框.png"
+                            alt="圓形相框"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">圓形拼圖</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#heartSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/heart_相框.png"
+                            alt="心型姊妹"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">心型拼圖</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#rectangleSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/Square_相框.png"
+                            alt="包裝"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">常規拼圖</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="裱框服務.php"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/相框2.png"
+                            alt="大小多樣式"
+                    /></a>
+                    <div class="showcase_item_name">
+                        <a href="#">裱框服務</a>
+                    </div>
+                </div>
+                <div class="showcase_item">
+                    <a href="#contactSection"
+                        ><img
+                            class="showcase_item_photo"
+                            src="images/首頁照片/urgent _document.png"
+                            alt="急件"
+                    /></a>
+                    <div class="showcase_item_name"><a href="#">聯絡我們</a></div>
+                </div>
+            </div>
+            <section class="interesting">
+                <div class="contents">
+                    <div class="item">
+                        <img src="images/icons/StarIcon.png" alt="" />
+                        <p>有趣</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icons/GifIcon.png" alt="" />
+                        <p>送禮</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/icons/拼圖icon.png" alt="" />
+                        <p>拼圖</p>
+                    </div>
+                </div>
+            </section>
+            <section id="catSection">
+                <div class="information">
+                    <div class="infoImg">
+                        <img src="images/首頁照片/cat_1000.jpg" alt="Cat Oval" />
+                    </div>
+                    <div class="details">
+                        <h1>【橢圓形拼圖】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: Cat-010</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 橢圓拼圖</li>
+                            <li>片數: 220</li>
+                            <li>尺寸: 305mm x 203mm</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="circleSection">
+                <div class="information reverse">
+                    <div class="infoImg">
+                        <img src="images/首頁照片/Circle_1000.jpg" alt="Cat Oval" />
+                    </div>
+                    <div class="details">
+                        <h1>【圓形拼圖】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: Mucha-010</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 圓形拼圖</li>
+                            <li>片數: 72</li>
+                            <li>尺寸：200mm x 200mm</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="heartSection">
+                <div class="information">
+                    <div class="infoImg">
+                        <img
+                            src="images/首頁照片/心_1000.jpg"
+                            alt="Heart Puzzle"
+                        />
+                    </div>
+                    <div class="details">
+                        <h1>【心型拼圖】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: love-010</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 心形拼圖</li>
+                            <li>片數: 75</li>
+                            <li>尺寸：223mm x 178mm</li>
+                        </ul>
+                    </div>
+                </div>`
+            </section>
+            <section id="rectangleSection">
+                <div class="information reverse">
+                    <div class="infoImg">
+                        <img
+                            src="images/首頁照片/夜光_1000.jpg"
+                            alt="Cat Oval"
+                        />
+                    </div>
+                    <div class="details">
+                        <h1>【常規拼圖】</h1>
+                        <ul>
+                            <li>品牌: Fond Momento</li>
+                            <li>型號: yiG-010</li>
+                            <li>適用年齡: 6歲以上</li>
+                            <li>材質: 木</li>
+                            <li>產地: 台灣</li>
+                            <li>玩具類型: 木製玩具</li>
+                            <li>拼圖類型: 方形拼圖</li>
+                            <li>尺寸:</li>
+                            <li>102mm x 152mm (片數:35)</li>
+                            <li>127mm x 178mm (片數:88)</li>
+                            <li>203mm x 254mm (片數:100)</li>
+                            <li>297mm x 420mm (片數:285)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="postageSection">                
+                <div class="information">
+                    <div class="infoImg">
+                        <img
+                            src="images/首頁照片/urgent _document.png"
+                            alt="Cat Oval"
+                        />
+                    </div>
+                     <div class="details">
+                        <h1>【急件】</h1>
+                        <ol>
+                            <li>下單前請確認選購的商品款式。</li>
+                            <li>訂製拼圖前，請先確認圖檔來源未有侵害他人著作權、版權及肖像權等情況；若圖檔來源有侵權之情況時，您將自行負起相關之法律責任及損害賠償責任，請多小心以免觸法。</li>
+                            <li>以圖檔示意圖確認後，隔日起算７個工作天寄出（不含例假日），物流配送約2～3天，以實際物流配送通知為準。</li>
+                            <li>若您是選擇到門市取件，則依門市到貨後通知您為準。海外的朋友，配送時程則依各物流公司工作時程及公告為主。</li>
+                            <li>急件加收費用說明：正常訂製客製拼圖所需天數為7日，提醒您急件費不納入免運範圍內。</li>
+                          
+                        </ol>
+                    </div>
+                </div>
+
+            </section>   -->          
+            <section id="contactSection">
+                <div class="contactContents">
+                    <h1>聯絡我們</h1>
+                    <p>
+                        電話: 04 1234 5678
+                        <br>
+                        Email: service@fond.com.tw
+                        <br>
+                        或填寫以下表單，我們將在3-5天內回信。謝協您耐心等待。
+                    </p>
+                    <form action="#contactSection " class="needs-validation">
+                        <div class="formupper">
+                            <div class="contact contactName">
+                                <span>名字</span>
+                                <input type="text" class="textinput">
+                            </div>
+                            <div class="contact contactNumber">
+                                <span>電話</span>
+                                <input type="tel" class="textinput">
+                            </div>
+                            <div class="contact contactEmail">
+                                <span>電子信箱</span>
+                                <input type="email" class="textinput form-control" />
+                            </div>
+                        </div>
+
+                        <div class="contact contactMessage">
+                            <span>您的訊息</span>
+                            <textarea class="textinput"></textarea>
+                            <!-- <input type="text" class="textinput"> -->
+                        </div>
+                        <button class="brownbutton">送出</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footerLeft">
+                <a href="對對碰.php"><img src="Game/g52.jpg" alt="對對碰" /></a>
+                <span>僅供教學練習</span>
+            </div>
+
+            <ul id="footer_details">
+                <li class="footer_items">
+                    <a href="關於我們.php">關於我們</a>
+                </li>
+                <li class="footer_lines">|</li>
+                <li class="footer_items">
+                    <a href="index.php#contactSection">聯絡我們</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- Javascript Scripts -->
+
+        <script src="js/libraries/jquery-3.6.0.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/template.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

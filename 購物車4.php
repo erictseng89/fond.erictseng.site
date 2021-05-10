@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/會員.css">
+        <link rel="stylesheet" href="CSS/購物車4.css">
     <!-- Javascript Libraries -->
         <script src="js/libraries/jquery-3.6.0.js"></script>
     <!-- font-family: "Noto Sans TC"; -->
@@ -104,61 +104,54 @@
         </div>
     </nav>
     <main>
-        <div class="bigBox brownborder">
-            <div class="memberLogin">
-                <h1>會員登入</h1>
-                <form>
-                    <span>帳號</span>
-                    <input class="textinput" type="text" placeholder="手機號碼">
-                    <span>密碼</span>
-                    <input class="textinput" type="password" placeholder="密碼">
-                    <div class="loginBox">
-                        <p></p>
-                        
-                        <a href="#"><input class="brownbutton" type="button" value="忘記密碼"></a>
-                    </div>
-                    <!-- <input class="brownbutton" type="button" value="忘記密碼"> -->
-                    <div class="loginBox">
-                        <a href="會員4.php"><input class="brownbutton" type="button" value="加入會員"></a>
-                        <a href="會員2.php"><input class="brownbutton" type="button" value="登入"></a>
-                    </div>
-                </form>
-                <div class="socialLogin">
-                        <a href="#"><img src="images/member/facebook_login.png" alt="Facebook Login"></a>
-                        <a href="#"><img src="images/member/btn_google_signin_light_normal_web@2x.png" alt="Google Login"></a>
-                </div>
-            </div>
-            <div class="promotion">
-                <div class="slideshow">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-<!--                             <li data-target="#carousel" data-slide-to="2"></li>
- -->                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/slideshow/member_ss1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss2.jpg" alt="Second slide">
-                            </div>
-<!--                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss3.jpg" alt="Third slide">
-                            </div> -->
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
+        <div class="processBox">
+            <div class="process">
+                <div class="pointer pointerPink">購物清單</div>
+                <div class="pointer pointerPink">付款方式</div>
+                <div class="pointer pointerPink">寄送地址</div>
+                <div class="pointer pointerPink">完成訂單</div>
             </div>
         </div>
+        <div class="contents">
+            <div class="list">
+                <p class="receiptNumber">
+                    <span>訂單編號: </span> <span>21041135</span>
+                </p>
+                <div class="item">
+                    <p>產品名字</p>
+                    <p>單價</p>
+                    <p>數量</p>
+                    <p>金額</p>
+                </div>
+                <div class="item">
+                    <p>產品名字</p>
+                    <p>單價</p>
+                    <p>數量</p>
+                    <p>金額</p>
+                </div>
+                <div class="item">
+                    <p>產品名字</p>
+                    <p>單價</p>
+                    <p>數量</p>
+                    <p>金額</p>
+                </div>
+                
+            </div>
+            <div class="postageDetails">
+                <h1>寄送資訊</h1>
+                <span>收件人: </span>
+                <p>王XX</p>
+                <span>手機: </span>
+                <p>0987 654 321</p>
+                <span>寄送地點</span>
+                <p>(地址)</p>
+            
+            </div>
+            <div class="nextStepPointer"><a href="index.php">回首頁</a></div>
+        </div>
+        
+
+        
     </main>
     <footer>
         <div class="footerLeft">
@@ -177,8 +170,6 @@
         </ul>
     </footer>
     <!--k Javascript Scripts -->
-<script src="js/libraries/jquery-3.6.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/template.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/會員.css">
+        <link rel="stylesheet" href="CSS/會員3.css">
     <!-- Javascript Libraries -->
         <script src="js/libraries/jquery-3.6.0.js"></script>
     <!-- font-family: "Noto Sans TC"; -->
@@ -104,61 +104,48 @@
         </div>
     </nav>
     <main>
-        <div class="bigBox brownborder">
-            <div class="memberLogin">
-                <h1>會員登入</h1>
-                <form>
-                    <span>帳號</span>
-                    <input class="textinput" type="text" placeholder="手機號碼">
-                    <span>密碼</span>
-                    <input class="textinput" type="password" placeholder="密碼">
-                    <div class="loginBox">
-                        <p></p>
-                        
-                        <a href="#"><input class="brownbutton" type="button" value="忘記密碼"></a>
-                    </div>
-                    <!-- <input class="brownbutton" type="button" value="忘記密碼"> -->
-                    <div class="loginBox">
-                        <a href="會員4.php"><input class="brownbutton" type="button" value="加入會員"></a>
-                        <a href="會員2.php"><input class="brownbutton" type="button" value="登入"></a>
-                    </div>
-                </form>
-                <div class="socialLogin">
-                        <a href="#"><img src="images/member/facebook_login.png" alt="Facebook Login"></a>
-                        <a href="#"><img src="images/member/btn_google_signin_light_normal_web@2x.png" alt="Google Login"></a>
-                </div>
+        <div class="contents">
+            <div class="heading">      
+                <ul>
+                    <li><a href="會員2.php">訂單查詢</a></li>
+                    <li><a href="#">查詢進度</a></li>
+                    <li><a href="會員4.php">個人資料</a></li>
+                </ul>
             </div>
-            <div class="promotion">
-                <div class="slideshow">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-<!--                             <li data-target="#carousel" data-slide-to="2"></li>
- -->                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/slideshow/member_ss1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss2.jpg" alt="Second slide">
-                            </div>
-<!--                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss3.jpg" alt="Third slide">
-                            </div> -->
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+            <div class="ordersBox">
+                <div class="orders brownborder">
+                    <div class="orderStatus">
+                        <span class="textAlignRight">單號:</span>
+                        <span class="textAlignLeft">#21041090</span>
+                        <span class="textAlignRight">狀態:</span>
+                        <span class="textAlignLeft">製作中</span>
                     </div>
+                    <div class="pointerBox">
+                        <div class="pointer pointerPink">收到訂單</div>
+                        <div class="pointer pointerYellow pointerCurrent">製作</div>
+                        <div class="pointer pointerPink">出貨</div>
+                        <div class="pointer pointerYellow">已送達</div>
+                    </div>
+    
+                </div>
+                <div class="orders brownborder">
+                    <div class="orderStatus">
+                        <span class="textAlignRight">單號:</span>
+                        <span class="textAlignLeft">#2104016</span>
+                        <span class="textAlignRight">狀態:</span>
+                        <span class="textAlignLeft">出貨</span>
+                    </div>
+                    <div class="pointerBox">
+                        <div class="pointer pointerPink">收到訂單</div>
+                        <div class="pointer pointerYellow">製作</div>
+                        <div class="pointer pointerPink pointerCurrent">出貨</div>
+                        <div class="pointer pointerYellow">已送達</div>
+                    </div>
+    
                 </div>
             </div>
         </div>
+
     </main>
     <footer>
         <div class="footerLeft">
@@ -177,8 +164,6 @@
         </ul>
     </footer>
     <!--k Javascript Scripts -->
-<script src="js/libraries/jquery-3.6.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/template.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ function startPlaying() {
 }
 
 function askCard() {
-    // $(".gameBox").HTML = "";
+    // $(".gameBox").php = "";
     let boxValue = document.querySelector('#cardPlayBox').value;
     if (boxValue == "") {
         cardPairs = 8;

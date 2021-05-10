@@ -37,7 +37,7 @@ $(function () {
     });
 
     function showMsg(draggableId, ans) {
-        $(draggableId).find('span').html(ans);
+        $(draggableId).find('span').php(ans);
     }
     // 判斷是否完成拼圖的函數
     function finish (event) {

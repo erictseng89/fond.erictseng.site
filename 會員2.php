@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/template.css">
+        <link rel="stylesheet" href="CSS/會員2.css">
+    <!-- Javascript Libraries -->
+        <script src="js/libraries/jquery-3.6.0.js"></script>
+    <!-- font-family: "Noto Sans TC"; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title/Icon -->
+    <title>Fond Momento</title>
+    <link rel = "icon" href = "images/icon.png" type = "image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="banner_top">
+            <div id="banner_logo_box">
+                <a href="index.php"
+                    ><img
+                        id="banner_logo"
+                        src="images/logo.png"
+                        alt="LOGO: Fond Momento"
+                /></a>
+            </div>
+            <div id="banner_slogan_box">
+                <img
+                    id="banner_slogan"
+                    src="images/header_slogan.png"
+                    alt="Slogan: Love is not only a sentiment, but also an art"
+                />
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div id="nav_bar">
+            <div id="nav_logo">
+                <a href="index.php"
+                    ><img src="images/logo2.png" alt="Logo"
+                /></a>
+            </div>
+            <ul class="horizontalNav">
+                <li class="nav_items">
+                    <a href="訂製拼圖.php">訂製拼圖</a>
+                </li>
+                <li class="nav_items">
+                    <a href="裱框服務.php">產品介紹</a>
+                </li>
+                <li class="nav_items">
+                    <a href="拼圖遊戲.php">拼圖遊戲</a>
+                </li>
+            </ul>
+        </div>
+        <div class="member_cart horizontalNav">
+            <a href="會員.php"
+                ><img
+                    class="cart_icons"
+                    src="images/icons/1x/member.png"
+                    alt="Member Login"
+            /></a>
+            <a href="購物車.php"
+                ><img
+                    class="cart_icons"
+                    src="images/icons/1x/cart.png"
+                    alt="Shopping Cart"
+            /></a>
+            <a href="index.php"
+                ><img
+                    class="cart_icons"
+                    src="images/icons/1x/home.png"
+                    alt="Home Page"
+                    style="padding-left: 0.20em"
+                    
+            /></a>
+        </div>
+        <div class="sideMenu">
+            <ul>
+                <li></li>
+                <li><a href="訂製拼圖.php">訂製拼圖</a></li>
+                <li><a href="裱框服務.php">產品介紹</a></li>
+                <li><a href="拼圖遊戲.php">拼圖遊戲</a></li>
+                <li class="member_cart">
+                    <a href="會員.php"
+                        ><img
+                            class="cart_icons"
+                            src="images/icons/1x/member.png"
+                            alt="Member Login"
+                    /></a>
+                    <a href="購物車.php"
+                        ><img
+                            class="cart_icons"
+                            src="images/icons/1x/cart.png"
+                            alt="Shopping Cart"
+                    /></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="contents">
+            <div class="heading">      
+                <ul>
+                    <li><a href="#">訂單查詢</a></li>
+                    <li><a href="會員3.php">查詢進度</a></li>
+                    <li><a href="會員4.php">個人資料</a></li>
+                </ul>
+            </div>
+            <div class="orders">
+                <div class="list">
+                    <div class="itemBox brownborder">
+                        <div class="orderDetails">
+                            <h1>訂單編號: <span>A210416001</span></h1>
+                            <h2>110年 04月 16號</h2>
+                        </div>
+
+                        <div class="item">
+                            <div class="itemImage"><img src="images/首頁照片/cat_oval_相框.png" alt=""></div>
+                            <!-- <span class="itemName">橢圓形 - 直向 (220片)</span> -->
+                            <span class="itemName">橢圓形 - 小 (200片)</span>
+                            <p class="itemPrice">800元</p>
+                            <p class="itemNumber">x1</p>
+                            <p class="itemTotal">800元</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="itemImage"><img src="images/首頁照片/Circle_相框.png" alt=""></div>
+                            <span class="itemName">圓形 - 小 (70片)</span>
+                            <p class="itemPrice">300元</p>
+                            <p class="itemNumber">x2</p>
+                            <p class="itemTotal">600元</p>
+                        </div>
+                        <div class="item">
+                            <div class="itemImage"><img src="images/首頁照片/相框2.png" alt=""></div>
+                            <span class="itemName">方形 - 大 (240片)</span>
+                            <p class="itemPrice">700元</p>
+                            <p class="itemNumber">x1</p>
+                            <p class="itemTotal">700元</p>
+                        </div>
+                        <div class="total">
+                            <span>商品金額</span>
+                            <p>2100元</p>
+                            <span>運費</span>
+                            <p>60元</p>
+                            <span>折扣</span>
+                            <p>-60元</p>
+                            <span>總金額</span>
+                            <p>2100元</p>
+                        </div>  
+                    </div>
+                    <div class="itemBox brownborder">
+                        <div class="orderDetails">
+                            <h1>訂單編號: <span>A210416001</span></h1>
+                            <h2>110年 04月 16號</h2>
+                        </div>
+
+                        <div class="item">
+                            <div class="itemImage"><img src="images/首頁照片/cat_oval_相框.png" alt=""></div>
+                            <!-- <span class="itemName">橢圓形 - 直向 (220片)</span> -->
+                            <span class="itemName">橢圓形 - 小 (200片)</span>
+                            <p class="itemPrice">800元</p>
+                            <p class="itemNumber">x1</p>
+                            <p class="itemTotal">800元</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="itemImage"><img src="images/首頁照片/Circle_相框.png" alt=""></div>
+                            <span class="itemName">圓形 - 小 (70片)</span>
+                            <p class="itemPrice">300元</p>
+                            <p class="itemNumber">x2</p>
+                            <p class="itemTotal">600元</p>
+                        </div>
+                        <div class="item">
+                            <div class="itemImage"><img src="images/首頁照片/相框2.png" alt=""></div>
+                            <span class="itemName">方形 - 大 (240片)</span>
+                            <p class="itemPrice">700元</p>
+                            <p class="itemNumber">x1</p>
+                            <p class="itemTotal">700元</p>
+                        </div>
+                        <div class="total">
+                            <span>商品金額</span>
+                            <p>2100元</p>
+                            <span>運費</span>
+                            <p>60元</p>
+                            <span>折扣</span>
+                            <p>-60元</p>
+                            <span>總金額</span>
+                            <p>210元</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="ordersBox">
+            <div class="orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#2104103</th>
+                            <th>商品名稱</th>
+                            <th>數量</th>
+                            <th>金額</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>(商品縮圖)</td>
+                            <td>(商品名稱)</td>
+                            <td>(數量)</td>
+                            <td>(金額)</td>
+                        </tr>
+                        <tr>
+                            <td>(商品縮圖)</td>
+                            <td>(商品名稱)</td>
+                            <td>(數量)</td>
+                            <td>(金額)</td>
+                        </tr>
+                        <tr>
+                            <td>(商品縮圖)</td>
+                            <td>(商品名稱)</td>
+                            <td>(數量)</td>
+                            <td>(金額)</td>
+                        </tr>
+                        <tr>
+                            <td>(商品縮圖)</td>
+                            <td>(商品名稱)</td>
+                            <td>(數量)</td>
+                            <td>(金額)</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>總金額</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#2104015</th>
+                            <th>商品名稱</th>
+                            <th>數量</th>
+                            <th>金額</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>(商品縮圖)</td>
+                            <td>(商品名稱)</td>
+                            <td>(數量)</td>
+                            <td>(金額)</td>
+                        </tr>
+                        <tr>
+                            <td>(商品縮圖)</td>
+                            <td>(商品名稱)</td>
+                            <td>(數量)</td>
+                            <td>(金額)</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>總金額</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div> -->
+
+        </div>
+    </main>
+    <footer>
+        <div class="footerLeft">
+            <a href="對對碰.php"><img src="Game/g52.jpg" alt="對對碰" /></a>
+            <span>僅供教學練習</span>
+        </div>
+
+        <ul id="footer_details">
+            <li class="footer_items">
+                <a href="關於我們.php">關於我們</a>
+            </li>
+            <li class="footer_lines">|</li>
+            <li class="footer_items">
+                <a href="index.php#contactSection">聯絡我們</a>
+            </li>
+        </ul>
+    </footer>
+    <!--k Javascript Scripts -->
+<script src="js/template.js"></script>
+</body>
+</html>

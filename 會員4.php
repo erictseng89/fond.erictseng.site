@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/會員.css">
+        <link rel="stylesheet" href="CSS/會員4.css">
     <!-- Javascript Libraries -->
         <script src="js/libraries/jquery-3.6.0.js"></script>
     <!-- font-family: "Noto Sans TC"; -->
@@ -104,61 +104,44 @@
         </div>
     </nav>
     <main>
-        <div class="bigBox brownborder">
-            <div class="memberLogin">
-                <h1>會員登入</h1>
+        <div class="contents">
+            <div class="heading">      
+                <ul>
+                    <li><a href="會員2.php">訂單查詢</a></li>
+                    <li><a href="會員3.php">查詢進度</a></li>
+                    <li><a href="#">個人資料</a></li>
+                </ul>
+            </div>
+            <div class="formBox">
+                <h1>個人資料</h1>
                 <form>
-                    <span>帳號</span>
-                    <input class="textinput" type="text" placeholder="手機號碼">
-                    <span>密碼</span>
-                    <input class="textinput" type="password" placeholder="密碼">
-                    <div class="loginBox">
-                        <p></p>
-                        
-                        <a href="#"><input class="brownbutton" type="button" value="忘記密碼"></a>
-                    </div>
-                    <!-- <input class="brownbutton" type="button" value="忘記密碼"> -->
-                    <div class="loginBox">
-                        <a href="會員4.php"><input class="brownbutton" type="button" value="加入會員"></a>
-                        <a href="會員2.php"><input class="brownbutton" type="button" value="登入"></a>
-                    </div>
+                    <span>姓名</span>
+                    <input type="text" class="textinput">
+                    <span>電子信箱</span>
+                    <input type="email" class="textinput">
+                    <span>手機號碼</span>
+                    <input type="text" class="textinput">
+                    <span>寄送地址</span>
+                    <input type="text" class="textinput">
+                    <span></span>
+                    <button class="brownbutton">確認更改</button>
+                    <br>
+                    <span class="changePassword">更改密碼</span>
+                    <span>輸入密碼</span>
+                    <input type="password" class="textinput">
+                    <span>再次輸入密碼</span>
+                    <input type="password" class="textinput">
+                    <span></span>
+                    <button class="brownbutton">確認更改</button>
+    
                 </form>
-                <div class="socialLogin">
-                        <a href="#"><img src="images/member/facebook_login.png" alt="Facebook Login"></a>
-                        <a href="#"><img src="images/member/btn_google_signin_light_normal_web@2x.png" alt="Google Login"></a>
-                </div>
+            </formBox>
             </div>
-            <div class="promotion">
-                <div class="slideshow">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-<!--                             <li data-target="#carousel" data-slide-to="2"></li>
- -->                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/slideshow/member_ss1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss2.jpg" alt="Second slide">
-                            </div>
-<!--                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss3.jpg" alt="Third slide">
-                            </div> -->
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
         </div>
+
+
+
     </main>
     <footer>
         <div class="footerLeft">
@@ -177,8 +160,6 @@
         </ul>
     </footer>
     <!--k Javascript Scripts -->
-<script src="js/libraries/jquery-3.6.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/template.js"></script>
 </body>
 </html>

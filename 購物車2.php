@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/template.css">
-        <link rel="stylesheet" href="CSS/會員.css">
+        <link rel="stylesheet" href="CSS/購物車2.css">
     <!-- Javascript Libraries -->
         <script src="js/libraries/jquery-3.6.0.js"></script>
     <!-- font-family: "Noto Sans TC"; -->
@@ -104,60 +104,45 @@
         </div>
     </nav>
     <main>
-        <div class="bigBox brownborder">
-            <div class="memberLogin">
-                <h1>會員登入</h1>
+        <div class="processBox">
+            <div class="process">
+                <div class="pointer pointerPink">購物清單</div>
+                <div class="pointer pointerPink">付款方式</div>
+                <div class="pointer pointerYellow">寄送地址</div>
+                <div class="pointer pointerYellow">完成訂單</div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="list">
                 <form>
-                    <span>帳號</span>
-                    <input class="textinput" type="text" placeholder="手機號碼">
-                    <span>密碼</span>
-                    <input class="textinput" type="password" placeholder="密碼">
-                    <div class="loginBox">
-                        <p></p>
-                        
-                        <a href="#"><input class="brownbutton" type="button" value="忘記密碼"></a>
+                    <div class="method">
+                        <input type="radio" name="paymentMethod" value="sevenEleven">
+                        <p>7-11 取貨付款 <br> 滿2000元免運費</p>
+                        <span>+60元</span>
                     </div>
-                    <!-- <input class="brownbutton" type="button" value="忘記密碼"> -->
-                    <div class="loginBox">
-                        <a href="會員4.php"><input class="brownbutton" type="button" value="加入會員"></a>
-                        <a href="會員2.php"><input class="brownbutton" type="button" value="登入"></a>
+                    <div class="method">
+                        <input type="radio" name="paymentMethod" value="familyMart">
+                        <p>全家 取貨付款 <br> 滿2000元免運費</p>
+                        <span>+60元</span>
+                    </div>
+                    <div class="method">
+                        <input type="radio" name="paymentMethod" value="creditCard">
+                        <p>ATM 轉帳 <br> 滿2000元免運費</p>
+                        <span>+0元</span>
                     </div>
                 </form>
-                <div class="socialLogin">
-                        <a href="#"><img src="images/member/facebook_login.png" alt="Facebook Login"></a>
-                        <a href="#"><img src="images/member/btn_google_signin_light_normal_web@2x.png" alt="Google Login"></a>
-                </div>
             </div>
-            <div class="promotion">
-                <div class="slideshow">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-<!--                             <li data-target="#carousel" data-slide-to="2"></li>
- -->                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/slideshow/member_ss1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss2.jpg" alt="Second slide">
-                            </div>
-<!--                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/slideshow/member_ss3.jpg" alt="Third slide">
-                            </div> -->
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
+            <div class="total">
+                <span>商品金額</span>
+                <p>2100元</p>
+                <span>運費</span>
+                <p id="costDelivery">0元</p>
+                <span>折扣</span>
+                <p id="costDiscount">0元</p>
+                <span>小記</span>
+                <p>2100元</p>
             </div>
+            <div class="nextStepPointer"><a href="購物車3.php">寄送地址</a></div>
         </div>
     </main>
     <footer>
@@ -176,9 +161,8 @@
             </li>
         </ul>
     </footer>
-    <!--k Javascript Scripts -->
-<script src="js/libraries/jquery-3.6.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/template.js"></script>
+    <!-- Javascript Scripts -->
+    <script src="js/cart2.js"></script>
+    <script src="js/template.js"></script>
 </body>
 </html>
