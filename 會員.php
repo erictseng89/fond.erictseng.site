@@ -1,4 +1,39 @@
+<?php
+  // connect db
+  require_once("connMySql.php");
 
+  // enable sessions
+  session_start();
+
+  // check whether the user already has a session
+
+  if (isset($_SESSION["login_id"]) && ($_SESSION["login_id"] != "")) {
+    header("Location: 會員2.php");
+  }
+  if (isset($_POST["phone_number"]) && isset($_POST["password"])) {
+    // prepare the db query
+    $checkLogin = "SELECT id, phone_number, password, FROM members WHERE phone_number = ?";
+    $db_result = $db_link->prepare($checkLogin);
+    // list the "?" parameters, firs type, then 
+    $db_result->bind_param("s", $_POST["phone_number"]);
+    $db_result->execute();
+    $db_result->bind_result($id, $db_phone_number, $db_password);
+    $db_result->fetch();
+    $db_result->close();
+
+    if (password_verify($_POST["password"], $db_password)) {
+      $_SESSION["login_id"] = $id;
+    } else {
+      header("Location: 會員.php");
+    }
+    
+    
+
+
+  }
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,9 +145,9 @@
                 <h1>會員登入</h1>
                 <form>
                     <span>帳號</span>
-                    <input class="textinput" type="text" placeholder="手機號碼">
+                    <input class="textinput" type="text" placeholder="手機號碼" name="phone_number">
                     <span>密碼</span>
-                    <input class="textinput" type="password" placeholder="密碼">
+                    <input class="textinput" type="password" placeholder="密碼" name="password">
                     <div class="loginBox">
                         <p></p>
                         

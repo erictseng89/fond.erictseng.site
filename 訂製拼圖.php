@@ -107,58 +107,71 @@
             </div>
         </nav>
         <main>
-            <div class="contents">
-                <div class="selectionBox">
-                    <div class="shapeBox">
-                        <h1>形狀</h1>
-                        <ul>
-                            <li name="shapes">方形</li>
-                            <li name="shapes">圓形</li>
-                            <li name="shapes">橢圓形</li>
-                            <li name="shapes">心型</li>
-                        </ul>
+            <div id="gameBox">
+                <img
+                    class="margin1 size1"
+                    src="images/pintoo_game/pintoo1/0.jfif"
+                />
+                <div class="table margin1 size1">
+                    <!-- 拼圖底座 -->
+                    <div class="table_row">
+                        <div class="table_cell" id="Q1" data-ans="6"></div>
+                        <div class="table_cell" id="Q2" data-ans="5"></div>
+                        <div class="table_cell" id="Q3" data-ans="4"></div>
                     </div>
-                    <hr />
-                    <div class="sizeBox">
-                        <h1>大小</h1>
-                        <ul id="sizeList"></ul>
+                    <div class="table_row">
+                        <div class="table_cell" id="Q4" data-ans="3"></div>
+                        <div class="table_cell" id="Q5" data-ans="2"></div>
+                        <div class="table_cell" id="Q6" data-ans="1"></div>
                     </div>
-                    <hr />
-                    <div class="frameBox">
-                        <h1>框</h1>
-                        <ul id="frameList"></ul>
-                    </div>
-                    <hr />
- <!--                    <div class="specDetails">
-                        <h1>規格</h1>
-                        <p id="detailBox" class="brownborder"></p>
-                    </div> -->
-                </div>
-                <div class="display">
-                    <div id="drop-region">
-                        <div id="framePictureBox"></div>
-                        <div id="frameWireBox"></div>
-                        <div id="image-preview" class="border"></div>
-                        <input
-                            id="reset"
-                            type="button"
-                            class="resetButton brownbutton"
-                            value="移除圖片"
-                            onclick="reset()"
+                    <!-- 拼圖圖片 -->
+                    <div class="ans ui-widget-content" id="ans01" data-ans="1">
+                        <img
+                            id="pic01" class="ans_pic"
+                            src="images/pintoo_game/pintoo2/01.png"
                         />
-                        <div id="cartButton">
-                            <div id="cartContain" class="hasTooltip">
-                                <span class="tooltiptext">加入購物車</span>
-                                <a href="購物車.php">
-                                    <img
-                                        src="images/icons/1x/cart.png"
-                                        alt="Add to cart"
-                                    />
-                                </a>
-                            </div>
-                        </div>
+                        <span></span>
+                    </div>
+                    <div class="ans ui-widget-content" id="ans02" data-ans="2">
+                        <img
+                            id="pic02" class="ans_pic"
+                            src="images/pintoo_game/pintoo2/02.png"
+                        />
+                        <span></span>
+                    </div>
+                    <div class="ans ui-widget-content" id="ans03" data-ans="3">
+                        <img
+                            id="pic03" class="ans_pic"
+                            src="images/pintoo_game/pintoo2/03.png"
+                        />
+                        <span></span>
+                    </div>
+                    <div class="ans ui-widget-content" id="ans04" data-ans="4">
+                        <img
+                            id="pic04" class="ans_pic"
+                            src="images/pintoo_game/pintoo2/04.png"
+                        />
+                        <span></span>
+                    </div>
+                    <div class="ans ui-widget-content" id="ans05" data-ans="5">
+                        <img
+                            id="pic05" class="ans_pic"
+                            src="images/pintoo_game/pintoo2/05.png"
+                        />
+                        <span></span>
+                    </div>
+                    <div class="ans ui-widget-content" id="ans06" data-ans="6">
+                        <img
+                            id="pic06" class="ans_pic"
+                            src="images/pintoo_game/pintoo2/06.png"
+                        />
+                        <span></span>
                     </div>
                 </div>
+            </div>
+            <div id="finished">
+                <srong>* 拼圖完成 *</srong>
+                <button id="restart" type="button">重新開始</button>
             </div>
         </main>
         <footer>
